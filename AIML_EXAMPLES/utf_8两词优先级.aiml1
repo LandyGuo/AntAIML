@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="GB2312"?>
+
+<aiml version="1.0">
+ 
+  <category>
+    <pattern>_ 一 _ 姑 娘 _</pattern>
+    <template>1</template>
+  </category>
+ 
+<category>
+    <pattern>_ 一 _ 姑 娘 a</pattern>
+    <template>2</template>
+  </category>
+<category>
+    <pattern>_ 一 _ 姑 娘 *</pattern>
+    <template>3</template>
+  </category>
+<category>
+    <pattern>_ 一 a 姑 娘 *</pattern>
+    <template>4</template>
+  </category>
+<category>
+    <pattern>_ 一 * 姑 娘 *</pattern>
+    <template>5</template>
+  </category>
+<category>
+    <pattern>_ 一 * </pattern>
+    <template>6</template>
+  </category>
+<category>
+    <pattern>_  姑 娘 *</pattern>
+    <template>7</template>
+  </category>
+<category>
+    <pattern>* 一 _ 姑 娘 *</pattern>
+    <template>8</template>
+  </category>
+<category>
+    <pattern>* 一 a 姑 娘 *</pattern>
+    <template>9</template>
+  </category>
+<category>
+    <pattern>* 一 * 姑 娘 *</pattern>
+    <template>10</template>
+  </category>
+<category>
+    <pattern>* 一 * </pattern>
+    <template>11</template>
+  </category>
+<category>
+    <pattern>* 姑 娘 *</pattern>
+    <template>12</template>
+  </category>
+
+</aiml>

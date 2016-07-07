@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='GB2312'?>
+
+<aiml version='1.0'>
+
+<category>
+<pattern>* 梦 想 *   </pattern>
+<template> 做人没有梦想，那和咸鱼有什么区别啊？   
+</template>
+</category>
+
+<category>
+<pattern> 梦 想 *   </pattern>
+<template><srai><star/>梦想<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 梦 想 </pattern>
+<template><srai><star/>梦想<star/> </srai></template>
+</category>
+
+<category>
+<pattern>梦 想</pattern>
+<template><srai><star/>梦想<star/> </srai></template>
+</category>
+
+<category><?xml version='1.0' encoding='GB2312'?>
+
+<aiml version='1.0'>
+
+<category>
+<pattern>* 梦 想 *   </pattern>
+<template> 做人没有梦想，那和咸鱼有什么区别啊？   
+</template>
+</category>
+
+<category>
+<pattern> 梦 想 *   </pattern>
+<template><srai><star/>梦想<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 梦 想 </pattern>
+<template><srai><star/>梦想<star/> </srai></template>
+</category>
+
+<category>
+<pattern>梦 想</pattern>
+<template><srai><star/>梦想<star/> </srai></template>
+</category>
+
+<category><?xml version='1.0' encoding='GB2312'?>
+
+<aiml version='1.0'>
+
+<category>
+<pattern>* 梦 想 *   </pattern>
+<template> 做人没有梦想，那和咸鱼有什么区别啊？   
+</template>
+</category>
+
+<category>
+<pattern> 梦 想 *   </pattern>
+<template><srai><star/>梦想<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 梦 想 </pattern>
+<template><srai><star/>梦想<star/> </srai></template>
+</category>
+
+<category>
+<pattern>梦 想</pattern>
+<template><srai><star/>梦想<star/> </srai></template>
+</category>
+
+<category>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="gb2312"?>
+<aiml version="1.0">
+<!--十万个为什么-->
+
+<category>
+<pattern>什 么 叫 *</pattern>
+<template><srai>什么是<star/></srai></template>
+</category>
+
+<category>
+<pattern>* 叫 什 么</pattern>
+<template><srai>什么是<star/></srai></template>
+</category>
+
+<category>
+<pattern>* 是 什 么</pattern>
+<template><srai>什么是<star/></srai></template>
+</category>
+
+<category>
+<pattern>* 是 什 么 意 思</pattern>
+<template><srai>什么是<star/></srai></template>
+</category>
+
+<!--信息学类-->
+<category>
+<pattern>什 么 是 Delphi</pattern>
+<template>Delphi 是一个面向对象的 Windows 程序设计工具，我就是由它开发的啊。</template>
+</category>
+
+<category>
+<pattern>什 么 是 Visual Basic</pattern>
+<template>Visual Basic 是 Microsoft 的一个 Basic 版本，它是一个可视化的开发环境。</template>
+</category>
+
+<category>
+<pattern>什 么 是 VB</pattern>
+<template><srai>什么是Visual Basic</srai></template>
+</category>
+
+<category>
+<pattern>什 么 是 Linux</pattern>
+<template>Linux 是一种可以免费使用的 Unix 操作系统，值得一提的是，它是开放源代码的。</template>
+</category>
+
+<category>
+<pattern>什 么 是 DOS</pattern>
+<template>DOS 是磁盘操作系统（Disk Operating System）的缩写，它是80年代流行最广的操作系统。</template>
+</category>
+
+<!--常识类-->
+<category>
+<pattern>什 么 是 24 时 记 数 法</pattern>
+<template>24时记数法是将一天划分为24个小时（0~23时）的记数法，它相对于12时记数法的方便之处是只需要一个数字便可以标明一天中的任意一个小时。</template>
+</category>
+
+<category>
+<pattern>什 么 是 二 十 四 时 记 数 法</pattern>
+<template><srai>什么是24时记数法</srai></template>
+</category>
+
+</aiml>

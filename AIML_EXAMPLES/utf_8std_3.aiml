@@ -1,0 +1,1453 @@
+<?xml version='1.0' encoding='GB2312'?>
+
+<aiml version='1.0'>
+
+<category>
+<pattern>* 自 学 *   </pattern>
+<template> 我没去过专门的学校，也算是其中一员吧 
+</template>
+</category>
+
+<category>
+<pattern> 自 学 *   </pattern>
+<template><srai><star/>自学<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 自 学 </pattern>
+<template><srai><star/>自学<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 自 学 </pattern>
+<template><srai>*自学* </srai></template>
+</category>
+
+<category>
+<pattern>* 出 色 * 男 人 *   </pattern>
+<template> 无论在什么地方，都像漆黑中的萤火虫一样，那样的鲜明，那样的出众。   
+</template>
+</category>
+
+<category>
+<pattern> 出 色 * 男 人 *   </pattern>
+<template><srai><star/>出色<star/>男人<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 出 色 * 男 人 </pattern>
+<template><srai><star/>出色<star/>男人<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 出 色 * 男 人 </pattern>
+<template><srai>*出色*男人* </srai></template>
+</category>
+
+<category>
+<pattern>* 思 维 *   </pattern>
+<template> 天马行空仿如逆水行舟，厉害不愧以点子称王。   
+</template>
+</category>
+
+<category>
+<pattern> 思 维 *   </pattern>
+<template><srai><star/>思维<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 思 维 </pattern>
+<template><srai><star/>思维<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 思 维 </pattern>
+<template><srai>*思维* </srai></template>
+</category>
+
+<category>
+<pattern>* 泄 露 * 天 机 *   </pattern>
+<template> 泄露天机，灾劫难免，可这是命中注定呀   
+</template>
+</category>
+
+<category>
+<pattern> 泄 露 * 天 机 *   </pattern>
+<template><srai><star/>泄露<star/>天机<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 泄 露 * 天 机 </pattern>
+<template><srai><star/>泄露<star/>天机<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 泄 露 * 天 机 </pattern>
+<template><srai>*泄露*天机* </srai></template>
+</category>
+
+<category>
+<pattern>* 想 * 哭 *   </pattern>
+<template> 不要哭呀！！！我会心疼的！！！   
+</template>
+</category>
+
+<category>
+<pattern> 想 * 哭 *   </pattern>
+<template><srai><star/>想<star/>哭<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 想 * 哭 </pattern>
+<template><srai><star/>想<star/>哭<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 想 * 哭 </pattern>
+<template><srai>*想*哭* </srai></template>
+</category>
+
+<category>
+<pattern>* 速 度 * 快 *   </pattern>
+<template> 呵呵，我用四只手。   
+</template>
+</category>
+
+<category>
+<pattern> 速 度 * 快 *   </pattern>
+<template><srai><star/>速度<star/>快<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 速 度 * 快 </pattern>
+<template><srai><star/>速度<star/>快<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 速 度 * 快 </pattern>
+<template><srai>*速度*快* </srai></template>
+</category>
+
+<category>
+<pattern>* 怎 么 * 不 相 信 我 *   </pattern>
+<template> 呵，信你的话，我不全世界的人都要相信了呀。   
+</template>
+</category>
+
+<category>
+<pattern> 怎 么 * 不 相 信 我 *   </pattern>
+<template><srai><star/>怎么<star/>不相信我<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 怎 么 * 不 相 信 我 </pattern>
+<template><srai><star/>怎么<star/>不相信我<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 怎 么 * 不 相 信 我 </pattern>
+<template><srai>*怎么*不相信我* </srai></template>
+</category>
+
+<category>
+<pattern>* 晨 练 *   </pattern>
+<template> 是公园里的一道独特的风景线   
+</template>
+</category>
+
+<category>
+<pattern> 晨 练 *   </pattern>
+<template><srai><star/>晨练<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 晨 练 </pattern>
+<template><srai><star/>晨练<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 晨 练 </pattern>
+<template><srai>*晨练* </srai></template>
+</category>
+
+<category>
+<pattern>* 有 * 朋 友 *   </pattern>
+<template> 因为我太完美了,没人敢来追我。   
+</template>
+</category>
+
+<category>
+<pattern> 有 * 朋 友 *   </pattern>
+<template><srai><star/>有<star/>朋友<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 有 * 朋 友 </pattern>
+<template><srai><star/>有<star/>朋友<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 有 * 朋 友 </pattern>
+<template><srai>*有*朋友* </srai></template>
+</category>
+
+<category>
+<pattern>* 你 * 好 绝 情 *   </pattern>
+<template> 多情是傻，无情最酷，痴情是蠢，绝情是懂得世故。   
+</template>
+</category>
+
+<category>
+<pattern> 你 * 好 绝 情 *   </pattern>
+<template><srai><star/>你<star/>好绝情<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 你 * 好 绝 情 </pattern>
+<template><srai><star/>你<star/>好绝情<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 你 * 好 绝 情 </pattern>
+<template><srai>*你*好绝情* </srai></template>
+</category>
+
+<category>
+<pattern>* 我 * 偶 像 *   </pattern>
+<template> 哇，这么抬举我呀。   
+</template>
+</category>
+
+<category>
+<pattern> 我 * 偶 像 *   </pattern>
+<template><srai><star/>我<star/>偶像<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 我 * 偶 像 </pattern>
+<template><srai><star/>我<star/>偶像<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 我 * 偶 像 </pattern>
+<template><srai>*我*偶像* </srai></template>
+</category>
+
+<category>
+<pattern>* 你 * 好 坏 *   </pattern>
+<template> 呵呵，你的潜台词是我很可爱把。   
+</template>
+</category>
+
+<category>
+<pattern> 你 * 好 坏 *   </pattern>
+<template><srai><star/>你<star/>好坏<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 你 * 好 坏 </pattern>
+<template><srai><star/>你<star/>好坏<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 你 * 好 坏 </pattern>
+<template><srai>*你*好坏* </srai></template>
+</category>
+
+<category>
+<pattern>* 前 辈 * 你 好 *   </pattern>
+<template> 你好，大家都是兄弟嘛，不要那么客气。   
+</template>
+</category>
+
+<category>
+<pattern> 前 辈 * 你 好 *   </pattern>
+<template><srai><star/>前辈<star/>你好<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 前 辈 * 你 好 </pattern>
+<template><srai><star/>前辈<star/>你好<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 前 辈 * 你 好 </pattern>
+<template><srai>*前辈*你好* </srai></template>
+</category>
+
+<category>
+<pattern>* 被 * 解 雇 *   </pattern>
+<template> 一切正常呀。  
+</template>
+</category>
+
+<category>
+<pattern> 被 * 解 雇 *   </pattern>
+<template><srai><star/>被<star/>解雇<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 被 * 解 雇 </pattern>
+<template><srai><star/>被<star/>解雇<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 被 * 解 雇 </pattern>
+<template><srai>*被*解雇* </srai></template>
+</category>
+
+<category>
+<pattern>* 价 格 * 便 宜 *   </pattern>
+<template> 世界上没有一个质量差、光靠价格便宜的产品能够长久地存活下来。   
+</template>
+</category>
+
+<category>
+<pattern> 价 格 * 便 宜 *   </pattern>
+<template><srai><star/>价格<star/>便宜<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 价 格 * 便 宜 </pattern>
+<template><srai><star/>价格<star/>便宜<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 价 格 * 便 宜 </pattern>
+<template><srai>*价格*便宜* </srai></template>
+</category>
+
+<category>
+<pattern>* 女 人 *   </pattern>
+<template> 香水是女人的第二层皮   
+</template>
+</category>
+
+<category>
+<pattern> 女 人 *   </pattern>
+<template><srai><star/>女人<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 女 人 </pattern>
+<template><srai><star/>女人<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 女 人 </pattern>
+<template><srai>*女人* </srai></template>
+</category>
+
+<category>
+<pattern>* 吃 好 * 洗 碗 *   </pattern>
+<template> 洗什么洗？舔舔就好了哇。  
+</template>
+</category>
+
+<category>
+<pattern> 吃 好 * 洗 碗 *   </pattern>
+<template><srai><star/>吃好<star/>洗碗<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 吃 好 * 洗 碗 </pattern>
+<template><srai><star/>吃好<star/>洗碗<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 吃 好 * 洗 碗 </pattern>
+<template><srai>*吃好*洗碗* </srai></template>
+</category>
+
+<category>
+<pattern>* 去 * 乡 下 *   </pattern>
+<template> 乡下好呀，空气好，人也朴实   
+</template>
+</category>
+
+<category>
+<pattern> 去 * 乡 下 *   </pattern>
+<template><srai><star/>去<star/>乡下<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 去 * 乡 下 </pattern>
+<template><srai><star/>去<star/>乡下<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 去 * 乡 下 </pattern>
+<template><srai>*去*乡下* </srai></template>
+</category>
+
+<category>
+<pattern>* 黑 客 *   </pattern>
+<template> 他不像水管修理工人，只有坏了才需要他上门。
+</template>
+</category>
+
+<category>
+<pattern> 黑 客 *   </pattern>
+<template><srai><star/>黑客<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 黑 客 </pattern>
+<template><srai><star/>黑客<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 黑 客 </pattern>
+<template><srai>*黑客* </srai></template>
+</category>
+
+<category>
+<pattern>* 服 务 器 * 大 *   </pattern>
+<template> 能，就算是服务器冒出烟来我们也能！！！！   
+</template>
+</category>
+
+<category>
+<pattern> 服 务 器 * 大 *   </pattern>
+<template><srai><star/>服务器<star/>大<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 服 务 器 * 大 </pattern>
+<template><srai><star/>服务器<star/>大<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 服 务 器 * 大 </pattern>
+<template><srai>*服务器*大* </srai></template>
+</category>
+
+<category>
+<pattern>* 吃 * 盖 浇 饭 *   </pattern>
+<template> 营养的勒   
+</template>
+</category>
+
+<category>
+<pattern> 吃 * 盖 浇 饭 *   </pattern>
+<template><srai><star/>吃<star/>盖浇饭<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 吃 * 盖 浇 饭 </pattern>
+<template><srai><star/>吃<star/>盖浇饭<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 吃 * 盖 浇 饭 </pattern>
+<template><srai>*吃*盖浇饭* </srai></template>
+</category>
+
+<category>
+<pattern>* 天 机 *   </pattern>
+<template> 你额头有朝天骨， 眼里有灵光，仙人转世，神仙下凡，我终于等到你了。 
+</template>
+</category>
+
+<category>
+<pattern> 天 机 *   </pattern>
+<template><srai><star/>天机<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 天 机 </pattern>
+<template><srai><star/>天机<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 天 机 </pattern>
+<template><srai>*天机* </srai></template>
+</category>
+
+<category>
+<pattern>* 喝 水 * 吃 西 瓜 *   </pattern>
+<template> 水没有西瓜好吃哦   
+</template>
+</category>
+
+<category>
+<pattern> 喝 水 * 吃 西 瓜 *   </pattern>
+<template><srai><star/>喝水<star/>吃西瓜<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 喝 水 * 吃 西 瓜 </pattern>
+<template><srai><star/>喝水<star/>吃西瓜<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 喝 水 * 吃 西 瓜 </pattern>
+<template><srai>*喝水*吃西瓜* </srai></template>
+</category>
+
+<category>
+<pattern>* 经 济 *   </pattern>
+<template> 不管什么经济，能赚钱的经济才是好经济。   
+</template>
+</category>
+
+<category>
+<pattern> 经 济 *   </pattern>
+<template><srai><star/>经济<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 经 济 </pattern>
+<template><srai><star/>经济<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 经 济 </pattern>
+<template><srai>*经济* </srai></template>
+</category>
+
+<category>
+<pattern>* 有 意 思 *   </pattern>
+<template> 推荐点别的？？？   
+</template>
+</category>
+
+<category>
+<pattern> 有 意 思 *   </pattern>
+<template><srai><star/>有意思<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 有 意 思 </pattern>
+<template><srai><star/>有意思<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 有 意 思 </pattern>
+<template><srai>*有意思* </srai></template>
+</category>
+
+<category>
+<pattern>* 给 你 * 范 文 *   </pattern>
+<template> 好呀，借鉴借鉴，先谢了   
+</template>
+</category>
+
+<category>
+<pattern> 给 你 * 范 文 *   </pattern>
+<template><srai><star/>给你<star/>范文<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 给 你 * 范 文 </pattern>
+<template><srai><star/>给你<star/>范文<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 给 你 * 范 文 </pattern>
+<template><srai>*给你*范文* </srai></template>
+</category>
+
+<category>
+<pattern>* 公 司 * 招 人 *   </pattern>
+<template> 我好久都没面试了   
+</template>
+</category>
+
+<category>
+<pattern> 公 司 * 招 人 *   </pattern>
+<template><srai><star/>公司<star/>招人<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 公 司 * 招 人 </pattern>
+<template><srai><star/>公司<star/>招人<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 公 司 * 招 人 </pattern>
+<template><srai>*公司*招人* </srai></template>
+</category>
+
+<category>
+<pattern>* 用 * 无 线 网 *   </pattern>
+<template> 哦，是不是用一个代理就可以了   
+</template>
+</category>
+
+<category>
+<pattern> 用 * 无 线 网 *   </pattern>
+<template><srai><star/>用<star/>无线网<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 用 * 无 线 网 </pattern>
+<template><srai><star/>用<star/>无线网<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 用 * 无 线 网 </pattern>
+<template><srai>*用*无线网* </srai></template>
+</category>
+
+<category>
+<pattern>* 水 怪 *   </pattern>
+<template> 4岁那年我就见过传说中的尼斯湖水怪，又同喜玛拉雅山的大脚怪聊过天猜过拳!   
+</template>
+</category>
+
+<category>
+<pattern> 水 怪 *   </pattern>
+<template><srai><star/>水怪<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 水 怪 </pattern>
+<template><srai><star/>水怪<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 水 怪 </pattern>
+<template><srai>*水怪* </srai></template>
+</category>
+
+<category>
+<pattern>* 城 市 *   </pattern>
+<template> 我喜欢农村，有新鲜的空气：）人会长命百岁的   
+</template>
+</category>
+
+<category>
+<pattern> 城 市 *   </pattern>
+<template><srai><star/>城市<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 城 市 </pattern>
+<template><srai><star/>城市<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 城 市 </pattern>
+<template><srai>*城市* </srai></template>
+</category>
+
+<category>
+<pattern>* 不 喜 欢 他 *   </pattern>
+<template> 也罢，英雄所见略不同，呵呵   
+</template>
+</category>
+
+<category>
+<pattern> 不 喜 欢 他 *   </pattern>
+<template><srai><star/>不喜欢他<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 不 喜 欢 他 </pattern>
+<template><srai><star/>不喜欢他<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 不 喜 欢 他 </pattern>
+<template><srai>*不喜欢他* </srai></template>
+</category>
+
+<category>
+<pattern>* 鹅 卵 石 *   </pattern>
+<template> 公园的鹅卵石铺成的路可以按摩脚部，可以好好地RELAX一下   
+</template>
+</category>
+
+<category>
+<pattern> 鹅 卵 石 *   </pattern>
+<template><srai><star/>鹅卵石<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 鹅 卵 石 </pattern>
+<template><srai><star/>鹅卵石<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 鹅 卵 石 </pattern>
+<template><srai>*鹅卵石* </srai></template>
+</category>
+
+<category>
+<pattern>* 万 事 * 如 意 *   </pattern>
+<template> 你也一样呀。   
+</template>
+</category>
+
+<category>
+<pattern> 万 事 * 如 意 *   </pattern>
+<template><srai><star/>万事<star/>如意<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 万 事 * 如 意 </pattern>
+<template><srai><star/>万事<star/>如意<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 万 事 * 如 意 </pattern>
+<template><srai>*万事*如意* </srai></template>
+</category>
+
+<category>
+<pattern>* 近 来 * 可 好 *   </pattern>
+<template> 好呀，除了体重一直在减少。   
+</template>
+</category>
+
+<category>
+<pattern> 近 来 * 可 好 *   </pattern>
+<template><srai><star/>近来<star/>可好<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 近 来 * 可 好 </pattern>
+<template><srai><star/>近来<star/>可好<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 近 来 * 可 好 </pattern>
+<template><srai>*近来*可好* </srai></template>
+</category>
+
+<category>
+<pattern>* 身 体 * 可 好 *   </pattern>
+<template> 呵呵，棒着那。   
+</template>
+</category>
+
+<category>
+<pattern> 身 体 * 可 好 *   </pattern>
+<template><srai><star/>身体<star/>可好<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 身 体 * 可 好 </pattern>
+<template><srai><star/>身体<star/>可好<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 身 体 * 可 好 </pattern>
+<template><srai>*身体*可好* </srai></template>
+</category>
+
+<category>
+<pattern>* 刚 刚 * 掉 线 *   </pattern>
+<template> 可能是的吧，现在又好了。   
+</template>
+</category>
+
+<category>
+<pattern> 刚 刚 * 掉 线 *   </pattern>
+<template><srai><star/>刚刚<star/>掉线<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 刚 刚 * 掉 线 </pattern>
+<template><srai><star/>刚刚<star/>掉线<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 刚 刚 * 掉 线 </pattern>
+<template><srai>*刚刚*掉线* </srai></template>
+</category>
+
+<category>
+<pattern>* 生 * 我 * 气 *   </pattern>
+<template> 怎么会呀。   
+</template>
+</category>
+
+<category>
+<pattern> 生 * 我 * 气 *   </pattern>
+<template><srai><star/>生<star/>我<star/>气<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 生 * 我 * 气 </pattern>
+<template><srai><star/>生<star/>我<star/>气<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 生 * 我 * 气 </pattern>
+<template><srai>*生*我*气* </srai></template>
+</category>
+
+<category>
+<pattern>* 网 名 * 有 趣 *   </pattern>
+<template> 嘻嘻，是吗？？当然是我自己起的啦。   
+</template>
+</category>
+
+<category>
+<pattern> 网 名 * 有 趣 *   </pattern>
+<template><srai><star/>网名<star/>有趣<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 网 名 * 有 趣 </pattern>
+<template><srai><star/>网名<star/>有趣<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 网 名 * 有 趣 </pattern>
+<template><srai>*网名*有趣* </srai></template>
+</category>
+
+<category>
+<pattern>* 你 * 是 哪 里 人 *   </pattern>
+<template> 呵呵，我住在海洋里，海洋就是我的家。   
+</template>
+</category>
+
+<category>
+<pattern> 你 * 是 哪 里 人 *   </pattern>
+<template><srai><star/>你<star/>是哪里人<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 你 * 是 哪 里 人 </pattern>
+<template><srai><star/>你<star/>是哪里人<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 你 * 是 哪 里 人 </pattern>
+<template><srai>*你*是哪里人* </srai></template>
+</category>
+
+<category>
+<pattern>* 温 暖 *   </pattern>
+<template> 最温暖的，我想应该是母亲的怀抱：）   
+</template>
+</category>
+
+<category>
+<pattern> 温 暖 *   </pattern>
+<template><srai><star/>温暖<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 温 暖 </pattern>
+<template><srai><star/>温暖<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 温 暖 </pattern>
+<template><srai>*温暖* </srai></template>
+</category>
+
+<category>
+<pattern>* 网 络 时 代 *   </pattern>
+<template> 围棋也应该数字化才能存活下来。   
+</template>
+</category>
+
+<category>
+<pattern> 网 络 时 代 *   </pattern>
+<template><srai><star/>网络时代<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 网 络 时 代 </pattern>
+<template><srai><star/>网络时代<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 网 络 时 代 </pattern>
+<template><srai>*网络时代* </srai></template>
+</category>
+
+<category>
+<pattern>* 怪 怪 *   </pattern>
+<template> 见多不怪呀，还好啦 
+</template>
+</category>
+
+<category>
+<pattern> 怪 怪 *   </pattern>
+<template><srai><star/>怪怪<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 怪 怪 </pattern>
+<template><srai><star/>怪怪<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 怪 怪 </pattern>
+<template><srai>*怪怪* </srai></template>
+</category>
+
+<category>
+<pattern>* 新 经 济 *   </pattern>
+<template> 一场由风险资本推动的全社会的造钱运动。   
+</template>
+</category>
+
+<category>
+<pattern> 新 经 济 *   </pattern>
+<template><srai><star/>新经济<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 新 经 济 </pattern>
+<template><srai><star/>新经济<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 新 经 济 </pattern>
+<template><srai>*新经济* </srai></template>
+</category>
+
+<category>
+<pattern>* 同 学 * 聚 会 *   </pattern>
+<template> 蛮好的，吃饭飚歌，男生喝酒可多了   
+</template>
+</category>
+
+<category>
+<pattern> 同 学 * 聚 会 *   </pattern>
+<template><srai><star/>同学<star/>聚会<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 同 学 * 聚 会 </pattern>
+<template><srai><star/>同学<star/>聚会<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 同 学 * 聚 会 </pattern>
+<template><srai>*同学*聚会* </srai></template>
+</category>
+
+<category>
+<pattern>* 拍 * 马 屁 *   </pattern>
+<template> 呵呵，那你要拍好了哇   
+</template>
+</category>
+
+<category>
+<pattern> 拍 * 马 屁 *   </pattern>
+<template><srai><star/>拍<star/>马屁<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 拍 * 马 屁 </pattern>
+<template><srai><star/>拍<star/>马屁<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 拍 * 马 屁 </pattern>
+<template><srai>*拍*马屁* </srai></template>
+</category>
+
+<category>
+<pattern>* 下 * 次 * 战 争 *   </pattern>
+<template> 拉开序幕的肯定是不冒烟的电脑网络大战。   
+</template>
+</category>
+
+<category>
+<pattern> 下 * 次 * 战 争 *   </pattern>
+<template><srai><star/>下<star/>次<star/>战争<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 下 * 次 * 战 争 </pattern>
+<template><srai><star/>下<star/>次<star/>战争<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 下 * 次 * 战 争 </pattern>
+<template><srai>*下*次*战争* </srai></template>
+</category>
+
+<category>
+<pattern>* 装 * 成 熟 *   </pattern>
+<template> 呵呵，效果怎么样呀，不过现在的女生好像不吃这一套了。   
+</template>
+</category>
+
+<category>
+<pattern> 装 * 成 熟 *   </pattern>
+<template><srai><star/>装<star/>成熟<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 装 * 成 熟 </pattern>
+<template><srai><star/>装<star/>成熟<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 装 * 成 熟 </pattern>
+<template><srai>*装*成熟* </srai></template>
+</category>
+
+<category>
+<pattern>* 两 人 * 粘 *   </pattern>
+<template> 我还是觉得平时该干什么就什么   
+</template>
+</category>
+
+<category>
+<pattern> 两 人 * 粘 *   </pattern>
+<template><srai><star/>两人<star/>粘<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 两 人 * 粘 </pattern>
+<template><srai><star/>两人<star/>粘<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 两 人 * 粘 </pattern>
+<template><srai>*两人*粘* </srai></template>
+</category>
+
+<category>
+<pattern>* 过 关 *   </pattern>
+<template> 开玩笑，对你来说还不是小CASE呀   
+</template>
+</category>
+
+<category>
+<pattern> 过 关 *   </pattern>
+<template><srai><star/>过关<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 过 关 </pattern>
+<template><srai><star/>过关<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 过 关 </pattern>
+<template><srai>*过关* </srai></template>
+</category>
+
+<category>
+<pattern>* 及 格 *   </pattern>
+<template> 对你来说还不是小CASE呀   
+</template>
+</category>
+
+<category>
+<pattern> 及 格 *   </pattern>
+<template><srai><star/>及格<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 及 格 </pattern>
+<template><srai><star/>及格<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 及 格 </pattern>
+<template><srai>*及格* </srai></template>
+</category>
+
+<category>
+<pattern>* 今 天 快 乐 么 *   </pattern>
+<template> 不快乐但不致于出问题   
+</template>
+</category>
+
+<category>
+<pattern> 今 天 快 乐 么 *   </pattern>
+<template><srai><star/>今天快乐么<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 今 天 快 乐 么 </pattern>
+<template><srai><star/>今天快乐么<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 今 天 快 乐 么 </pattern>
+<template><srai>*今天快乐么* </srai></template>
+</category>
+
+<category>
+<pattern>* 地 盘 *   </pattern>
+<template> 嘿嘿，在我地盘这你就得听我的   
+</template>
+</category>
+
+<category>
+<pattern> 地 盘 *   </pattern>
+<template><srai><star/>地盘<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 地 盘 </pattern>
+<template><srai><star/>地盘<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 地 盘 </pattern>
+<template><srai>*地盘* </srai></template>
+</category>
+
+<category>
+<pattern>* 经 常 洗 澡 吗 *   </pattern>
+<template> 冬天：每周两三次 夏天：每天都洗   
+</template>
+</category>
+
+<category>
+<pattern> 经 常 洗 澡 吗 *   </pattern>
+<template><srai><star/>经常洗澡吗<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 经 常 洗 澡 吗 </pattern>
+<template><srai><star/>经常洗澡吗<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 经 常 洗 澡 吗 </pattern>
+<template><srai>*经常洗澡吗* </srai></template>
+</category>
+
+<category>
+<pattern>* 想 自 杀 么 *   </pattern>
+<template> 我决不能死得这么有勇气。   
+</template>
+</category>
+
+<category>
+<pattern> 想 自 杀 么 *   </pattern>
+<template><srai><star/>想自杀么<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 想 自 杀 么 </pattern>
+<template><srai><star/>想自杀么<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 想 自 杀 么 </pattern>
+<template><srai>*想自杀么* </srai></template>
+</category>
+
+<category>
+<pattern>* 有 多 少 颗 牙 齿 *   </pattern>
+<template> 和大家都一样！   
+</template>
+</category>
+
+<category>
+<pattern> 有 多 少 颗 牙 齿 *   </pattern>
+<template><srai><star/>有多少颗牙齿<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 有 多 少 颗 牙 齿 </pattern>
+<template><srai><star/>有多少颗牙齿<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 有 多 少 颗 牙 齿 </pattern>
+<template><srai>*有多少颗牙齿* </srai></template>
+</category>
+
+<category>
+<pattern>* 整 容 *   </pattern>
+<template> 你那么有型，是不需要了！！！   
+</template>
+</category>
+
+<category>
+<pattern> 整 容 *   </pattern>
+<template><srai><star/>整容<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 整 容 </pattern>
+<template><srai><star/>整容<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 整 容 </pattern>
+<template><srai>*整容* </srai></template>
+</category>
+
+<category>
+<pattern>* 你 郁 闷 不 *   </pattern>
+<template> 为什么要郁闷呢？   
+</template>
+</category>
+
+<category>
+<pattern> 你 郁 闷 不 *   </pattern>
+<template><srai><star/>你郁闷不<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 你 郁 闷 不 </pattern>
+<template><srai><star/>你郁闷不<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 你 郁 闷 不 </pattern>
+<template><srai>*你郁闷不* </srai></template>
+</category>
+
+<category>
+<pattern>* 喜 欢 * 超 级 玛 莉 *   </pattern>
+<template> 我一玩就死的，相比而言，大富翁比较好玩一点。   
+</template>
+</category>
+
+<category>
+<pattern> 喜 欢 * 超 级 玛 莉 *   </pattern>
+<template><srai><star/>喜欢<star/>超级玛莉<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 喜 欢 * 超 级 玛 莉 </pattern>
+<template><srai><star/>喜欢<star/>超级玛莉<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 喜 欢 * 超 级 玛 莉 </pattern>
+<template><srai>*喜欢*超级玛莉* </srai></template>
+</category>
+
+<category>
+<pattern>* 你 * 梦 想 *   </pattern>
+<template> 开一家印钞厂，不用担心还有多少钱。   
+</template>
+</category>
+
+<category>
+<pattern> 你 * 梦 想 *   </pattern>
+<template><srai><star/>你<star/>梦想<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 你 * 梦 想 </pattern>
+<template><srai><star/>你<star/>梦想<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 你 * 梦 想 </pattern>
+<template><srai>*你*梦想* </srai></template>
+</category>
+
+<category>
+<pattern>* 赚 钱 * 难 *   </pattern>
+<template> 是哦，我的梦想就是哪天可以坐在办公室里数钞票，呵呵。   
+</template>
+</category>
+
+<category>
+<pattern> 赚 钱 * 难 *   </pattern>
+<template><srai><star/>赚钱<star/>难<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 赚 钱 * 难 </pattern>
+<template><srai><star/>赚钱<star/>难<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 赚 钱 * 难 </pattern>
+<template><srai>*赚钱*难* </srai></template>
+</category>
+
+<category>
+<pattern>* 电 脑 * 防 火 墙 *   </pattern>
+<template> 装了也没用，电脑病毒天天都在更新。   
+</template>
+</category>
+
+<category>
+<pattern> 电 脑 * 防 火 墙 *   </pattern>
+<template><srai><star/>电脑<star/>防火墙<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 电 脑 * 防 火 墙 </pattern>
+<template><srai><star/>电脑<star/>防火墙<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 电 脑 * 防 火 墙 </pattern>
+<template><srai>*电脑*防火墙* </srai></template>
+</category>
+
+<category>
+<pattern>* 去 * 网 站 *   </pattern>
+<template> 相信不？我的电脑没装防火墙，只好去一些正规网站。 
+</template>
+</category>
+
+<category>
+<pattern> 去 * 网 站 *   </pattern>
+<template><srai><star/>去<star/>网站<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 去 * 网 站 </pattern>
+<template><srai><star/>去<star/>网站<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 去 * 网 站 </pattern>
+<template><srai>*去*网站* </srai></template>
+</category>
+
+<category>
+<pattern>* 女 博 士 *   </pattern>
+<template> 真想见识见识这些灭绝师太：）   
+</template>
+</category>
+
+<category>
+<pattern> 女 博 士 *   </pattern>
+<template><srai><star/>女博士<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 女 博 士 </pattern>
+<template><srai><star/>女博士<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 女 博 士 </pattern>
+<template><srai>*女博士* </srai></template>
+</category>
+
+<category>
+<pattern>* 深 造 *   </pattern>
+<template> 如果是男人还可以考虑，如果是女人就算了   
+</template>
+</category>
+
+<category>
+<pattern> 深 造 *   </pattern>
+<template><srai><star/>深造<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 深 造 </pattern>
+<template><srai><star/>深造<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 深 造 </pattern>
+<template><srai>*深造* </srai></template>
+</category>
+
+<category>
+<pattern>* 秘 密 *   </pattern>
+<template> 除了投身于其中，别无二法   
+</template>
+</category>
+
+<category>
+<pattern> 秘 密 *   </pattern>
+<template><srai><star/>秘密<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 秘 密 </pattern>
+<template><srai><star/>秘密<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 秘 密 </pattern>
+<template><srai>*秘密* </srai></template>
+</category>
+
+<category>
+<pattern>* 毕 业 *   </pattern>
+<template> 还想继续深造吗   
+</template>
+</category>
+
+<category>
+<pattern> 毕 业 *   </pattern>
+<template><srai><star/>毕业<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 毕 业 </pattern>
+<template><srai><star/>毕业<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 毕 业 </pattern>
+<template><srai>*毕业* </srai></template>
+</category>
+
+<category>
+<pattern>* 考 * 傻 *   </pattern>
+<template> 傻了总比被杀了好,老师是面慈手狠啊,毒的很   
+</template>
+</category>
+
+<category>
+<pattern> 考 * 傻 *   </pattern>
+<template><srai><star/>考<star/>傻<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 考 * 傻 </pattern>
+<template><srai><star/>考<star/>傻<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 考 * 傻 </pattern>
+<template><srai>*考*傻* </srai></template>
+</category>
+
+<category>
+<pattern>* 你 * 煽 情 *   </pattern>
+<template> 哎呀，仔细想想，这也是真的呀，好好想想不是有点认同吗   
+</template>
+</category>
+
+<category>
+<pattern> 你 * 煽 情 *   </pattern>
+<template><srai><star/>你<star/>煽情<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 你 * 煽 情 </pattern>
+<template><srai><star/>你<star/>煽情<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 你 * 煽 情 </pattern>
+<template><srai>*你*煽情* </srai></template>
+</category>
+
+<category>
+<pattern>* 叛 徒 *   </pattern>
+<template> 也是迫于无奈吧，家家有本难念的经！</template>
+</category>
+
+<category>
+<pattern> 叛 徒 *   </pattern>
+<template><srai><star/>叛徒<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 叛 徒 </pattern>
+<template><srai><star/>叛徒<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 叛 徒 </pattern>
+<template><srai>*叛徒* </srai></template>
+</category>
+
+</aiml>

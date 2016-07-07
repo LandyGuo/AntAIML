@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='GB2312'?>
+
+<aiml version='1.0'>
+
+<category>
+<pattern>* 元 旦 *   </pattern>
+<template> 今天是元旦，我决定在新的一年里每天睡眠时间不超过8小时.这样的话..8x365/24..121.6天..5月3日叫我起床!
+</template>
+</category>
+
+<category>
+<pattern> 元 旦 *   </pattern>
+<template><srai><star/>元旦<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 元 旦 </pattern>
+<template><srai><star/>元旦<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 元 旦 </pattern>
+<template><srai>*元旦* </srai></template>
+</category>
+
+<category>
+<pattern>* 答 辩 *   </pattern>
+<template> 就要毕业了哇，恭喜了</template>
+</category>
+
+<category>
+<pattern> 答 辩 *   </pattern>
+<template><srai><star/>答辩<star/> </srai></template>
+</category>
+
+<category>
+<pattern>* 答 辩 </pattern>
+<template><srai><star/>答辩<star/> </srai></template>
+</category>
+
+<category>
+<pattern> 答 辩 </pattern>
+<template><srai>*答辩*</srai></template>
+</category>
+
+</aiml>

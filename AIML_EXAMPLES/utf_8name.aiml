@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="GB2312"?>
+
+<aiml version="1.0">
+
+
+<category>
+  <pattern>我 叫 什 么 名 字</pattern>
+  <template>你在开玩笑吧？
+    <condition name="name">
+      <li value="">你自己的名字你不知道谁知道！你叫什么名字？</li>
+      <li>你不是叫<get name="name"/>吗？</li>
+    </condition>
+  </template>
+</category>
+<category>
+  <pattern>我 叫 *</pattern>
+  <template>我知道了，你叫<set name="name"><star/></set>。</template>
+</category>
+<category>
+  <pattern>我 的 名 字 叫 *</pattern>
+  <template><srai>我叫<star/></srai></template>
+</category>
+</aiml>
+

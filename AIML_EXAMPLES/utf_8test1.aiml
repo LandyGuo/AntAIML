@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="GB2312"?>
+
+<aiml version="1.0">
+ 
+<category>
+   <pattern>* 女 校 *</pattern>
+   <template>女子学校</template>
+</category>
+<category>
+   <pattern>* 女 校 </pattern>
+   <template><srai><star/>女校<star/></srai></template>
+</category>
+<category>
+   <pattern>女 校 *</pattern>
+   <template><srai><star/>女校<star/></srai></template>
+</category>
+<category>
+   <pattern>女 校 </pattern>
+   <template><srai>*女校*</srai></template>
+</category>
+</aiml>
