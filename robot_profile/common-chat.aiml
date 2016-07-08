@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+<!--    Pattern:2016-07-04
+1.*是[什么|啥]
+2.[城市]有[什么|哪些|啥][好玩[儿]的|好吃的]
+3.[人名]是谁？
+4.[今天|明天|后天]天气*
+5.*好不好
+6.*好吃吗
+7.*好玩[儿]吗
+8.[地名]怎么去？
+9.从[地名]到[地名]要[多久|多长时间]
+10.[北京|杭州|上海]有多大 -->
+
+<!-- 1.*是[什么|啥] -->
+   <category> 
+      <pattern>*是什么</pattern> 
+      <template>
+         你好,我不知道<star index="1"/>是什么
+      </template>
+   </category>
+
+   <category> 
+      <pattern>*是啥</pattern> 
+      <template>
+         你好,<star index="1"/>是什么我怎么知道，不过我可以帮你在神马上查查
+      </template>
+   </category>
+
+
+<!-- 2.[城市]有[什么|哪些|啥][好玩[儿]的|好吃的] -->
+<!-- 好玩儿的 -->
+
+   <category> 
+      <pattern>*好*的</pattern> 
+      <template>
+         <srai>好<star index="2"/>的</srai>
+      </template>
+   </category>
+
+   <category> 
+      <pattern>*好*的*</pattern> 
+      <template>
+         <srai>好*的</srai>
+      </template>
+   </category>
+
+   <category> 
+      <pattern>好*的*</pattern> 
+      <template>
+         <srai>好*的</srai>
+      </template>
+   </category>
+
+   <category> 
+      <pattern>*好*的</pattern> 
+      <template>
+         <srai>好*的</srai>
+      </template>
+   </category>
+
+   <category> 
+      <pattern>好*的</pattern> 
+      <template>
+         哈哈，好玩儿的，好吃的，好喝的应有尽有。。。先告诉我你在哪里？
+      </template>
+   </category>
+
+     <category> 
+      <pattern>*</pattern> 
+      <that>哈哈，好玩儿的，好吃的，好喝的应有尽有。。。先告诉我你在哪里？</that>
+      <template>
+         <think><set name="city"> <star/>  </set> </think>
+         帮您找找<star/> 有哪些好玩儿的： 王府井，西单，长城，蚂蚁金服。。。
+      </template>
+   </category>
+
+
+
+
+
+
+
+   <category> 
+      <pattern>有什么*的</pattern> 
+      <template>
+         <condition>
+         <li name="city" value="">你现在在什么地方?</li>
+         <li> 你现在在<get name="city"/> 吗？我给你找了当地一些<star index="1"/>的：
+         蚂蚁金服。。。 </li>
+       </condition>
+      </template>
+   </category>
+
+   <category> 
+      <pattern>*有什么*的</pattern> 
+      <template>
+         <think><set name="city"> <star index="1"/>  </set> </think>
+         你现在在<star index="1"/> 吗？我给你找了当地一些<star index="2"/>的：
+         蚂蚁金服。。。
+      </template>
+   </category>
+
+   <category> 
+      <pattern>*有什么*的*</pattern> 
+      <template>
+         <think><set name="city"> <star index="1"/>  </set> </think>
+         你现在在<star index="1"/> 吗？我给你找了当地一些<star index="2"/>的：
+         蚂蚁金服。。。
+      </template>
+   </category>
+
+
+
+   <category> 
+      <pattern>有哪些*的</pattern> 
+      <template>
+         <condition>
+         <li name="city" value="">你现在在什么地方?</li>
+         <li> 你现在在<get name="city"/> 吗？我给你找了当地一些<star index="1"/>的：
+         蚂蚁金服。。。 </li>
+       </condition>
+      </template>
+   </category>
+
+      <category> 
+      <pattern>*有哪些*的*</pattern> 
+      <template>
+         <think><set name="city"> <star index="1"/>  </set> </think>
+         你现在在<star index="1"/> 吗？我给你找了当地一些<star index="2"/>的：
+         蚂蚁金服。。。
+      </template>
+   </category>
+
+   <category> 
+      <pattern>*有哪些*的</pattern> 
+      <template>
+         <think><set name="city"> <star index="1"/>  </set> </think>
+         你现在在<star index="1"/> 吗？我给你找了当地一些<star index="2"/>的：
+         蚂蚁金服。。。
+      </template>
+   </category>
+
+
+
+
+   <category> 
+      <pattern>有啥*的</pattern> 
+      <template>
+         <condition>
+         <li name="city" value="">你现在在什么地方?</li>
+         <li> 你现在在<get name="city"/> 吗？我给你找了当地一些<star index="1"/>的：
+         蚂蚁金服。。。 </li>
+       </condition>
+      </template>
+   </category>
+
+      <category> 
+      <pattern>*有啥*的</pattern> 
+      <template>
+         <think><set name="city"> <star index="1"/>  </set> </think>
+         你现在在<star index="1"/> 吗？我给你找了当地一些<star index="2"/>的：
+         蚂蚁金服。。。
+      </template>
+   </category>
+
+
+      <category> 
+      <pattern>*有啥*的*</pattern> 
+      <template>
+         <think><set name="city"> <star index="1"/>  </set> </think>
+         你现在在<star index="1"/> 吗？我给你找了当地一些<star index="2"/>的：
+         蚂蚁金服。。。
+      </template>
+   </category>
+
+<!-- 3.[人名]是谁？ -->
+
+      <category> 
+      <pattern>*是谁</pattern> 
+      <template>
+         <star index="1"/> 是我的偶像
+      </template>
+   </category>
+
+         <category> 
+      <pattern>*是谁*</pattern> 
+      <template>
+         <star index="1"/> 是我的偶像
+      </template>
+   </category>
+
+      <category> 
+      <pattern>谁是*</pattern> 
+      <template>
+         <star index="1"/> 是我的偶像
+      </template>
+   </category>
+
+   <category> 
+      <pattern>认识*吗*</pattern> 
+      <template>
+        <star index="1"/> 是我的偶像
+      </template>
+   </category>
+
+      <category> 
+      <pattern>知道*吗*</pattern> 
+      <template>
+         <star index="1"/> 是我的偶像
+      </template>
+   </category>
+
+   <category> 
+      <pattern>听过*吗*</pattern> 
+      <template>
+         <star index="1"/> 是我的偶像
+      </template>
+   </category>
+
+
+
+<!-- 4.北京｜上海天气* -->
+
+
+
+
+
+
+<category>
+  <pattern>外面热么</pattern>
+  <template>
+      你现在在<get name="city"/>,
+      <system>python getweather.py <get name="where"/></system>
+  </template>
+</category>
+
+<category>
+  <pattern>我到*了</pattern>
+  <template>
+    <condition>
+      <li name="where" value=""><think><set name="where"><formal><star/></formal></set></think>
+      嗯我知道了.</li>
+      <li>骗淫, 你明明在<get name="where"/>.</li>
+    </condition>
+  </template>
+</category>
+
+
+<category>
+<pattern>* 天气</pattern>
+<template>
+<system>python getweather.py  <star /></system>
+</template>
+</category>
+
+<category>
+<pattern>告诉我 * 的天气</pattern>
+<template>
+<system>python getweather.py  <star /></system>
+</template>
+</category>
+
+<category>
+<pattern>* 天气*</pattern>
+<template>
+<system>python getweather.py  <star index="1"/></system>
+</template>
+</category>
+
+<category>
+<pattern>* 当前天气</pattern>
+<template>
+<system>python getweather.py  <star /></system>
+</template>
+</category>
+
+<category>
+<pattern>* 现在天气</pattern>
+<template>
+<system>python getweather.py  <star /></system>
+</template>
+</category>
+
+
+   <category>
+  <pattern>天气</pattern>
+  <template>
+    <condition>
+      <li name="city" value="">你现在在什么地方?</li>
+      <li ><system>python getweather.py  <get name="city"/></system></li>
+    </condition>
+  </template>
+</category>
+
+
+<category>
+<pattern>*</pattern>
+<that>你现在在什么地方</that>
+<template>
+<think><set name="city"><star/> </set></think>
+<random>
+  <li><get name="where"/>是个好地方.</li>
+  <li>真希望我也在<get name="city"/>陪你.</li>
+  <li>我刚刚看了下<get name="city"/>的天气哦.</li>
+</random>
+</template>
+</category>
+ 
+
+
+ <!-- 5.*好不好 -->
+    <category> 
+      <pattern>*好不好</pattern> 
+      <template>
+         你们太年轻！<star index="1"/> 好不好不是我说的算，如果
+         要我说，我觉得挺好
+      </template>
+   </category>
+
+    <category> 
+      <pattern>*好不好*</pattern> 
+      <template>
+         你们太年轻！<star index="1"/> 好不好不是我说的算，如果
+         要我说，我觉得挺好
+      </template>
+   </category>
+
+<!-- 6.*好吃吗  7.*好玩[儿]吗 -->
+
+   <category> 
+      <pattern>*好吃吗</pattern> 
+      <template>
+         当然，<star index="1"/> 可是我的最爱啊
+      </template>
+   </category>
+
+
+      <category> 
+      <pattern>*好玩吗</pattern> 
+      <template>
+         当然，<star index="1"/> 可是我的最爱啊
+      </template>
+   </category>
+
+
+   <category> 
+      <pattern>*好玩儿吗</pattern> 
+      <template>
+         当然，<star index="1"/> 可是我的最爱啊
+      </template>
+   </category>
+
+
+<!-- 8.[地名]怎么去？ -->
+
+      <category>
+      <pattern>*怎么去</pattern>
+      <template>
+      <condition>
+         <li name="city" value=""><star/>是个好地方～可以在阿里内外上查查哦</li>
+         <li >你现在不是在<get name="city"/>吗？在阿里内外预定一下去<star/>就可以啦</li>
+      </condition>
+      </template>
+      </category>
+
+      <category>
+      <pattern>*怎么去*</pattern>
+      <template>
+      <condition>
+         <li name="city" value=""><star/>是个好地方～可以在阿里内外上查查哦</li>
+         <li >你现在不是在<get name="city"/>吗？在阿里内外预定一下去<star/>就可以啦</li>
+      </condition>
+      </template>
+      </category>
+
+      <category>
+      <pattern>怎么去*</pattern>
+      <template>
+      <condition>
+         <li name="city" value=""><star/>是个好地方～可以在阿里内外上查查哦</li>
+         <li >你现在不是在<get name="city"/>吗？在阿里内外预定一下去<star/>就可以啦</li>
+      </condition>
+      </template>
+      </category>
+
+
+<!-- 9.从[地名]到[地名]要[多久|多长时间] -->
+
+
+      <category>
+      <pattern>从*到*要*</pattern>
+      <template>
+         我从<star index="1"/>到<star index="2"/>只用一瞬间，很羡慕吧哈哈～～
+      </template>
+      </category>
+
+      <category>
+      <pattern>*到*有*</pattern>
+      <template>
+         我从<star index="1"/>到<star index="2"/>只用一瞬间，很羡慕吧哈哈～～
+      </template>
+      </category>
+
+
+<!-- 10.[北京|杭州|上海]有多大 --> -->
+      <category>
+      <pattern>*有多大</pattern>
+      <template>
+         <star index="1"/>开车从三环到五环需要一整天！
+      </template>
+      </category>
+
+      <category>
+      <pattern>*有多大*</pattern>
+      <template>
+        <star index="1"/>开车从三环到五环需要一整天！
+      </template>
+      </category>
+
+
+<!-- 11.[地名]美不美 -->
+   <category>
+      <pattern>*美不美</pattern>
+      <template>
+         我觉得<star index="1"/>挺美
+      </template>
+      </category>
+
+      <category>
+      <pattern>*美不美*</pattern>
+      <template>
+         我觉得<star index="1"/>挺美
+      </template>
+      </category>
+
+<!-- 12. 阿里巴巴 -->
+      <category>
+      <pattern>*阿里巴巴</pattern>
+      <template>
+         <srai>阿里巴巴</srai>
+      </template>
+      </category>
+
+      <category>
+      <pattern>*阿里巴巴*</pattern>
+      <template>
+         <srai>阿里巴巴</srai>
+      </template>
+      </category>
+
+      <category>
+      <pattern>阿里巴巴*</pattern>
+      <template>
+         <srai>阿里巴巴</srai>
+      </template>
+      </category>
+
+      <category>
+      <pattern>阿里巴巴</pattern>
+      <template>
+         说起阿里巴巴，我最先想到的就是我马云爸爸！！
+      </template>
+      </category>
+
+
+
+<!-- 13. *[怎么|咋]样 -->
+   <category>
+      <pattern>*怎么样</pattern>
+      <template>
+         说起阿里巴巴，我最先想到的就是我马云爸爸！！
+      </template>
+      </category>
+
+
+   <category>
+      <pattern>*咋样</pattern>
+      <template>
+         说起阿里巴巴，我最先想到的就是我马云爸爸！！
+      </template>
+      </category>
+
+
+<!-- 14. *[怎么|咋]办 -->
+      <category>
+      <pattern>*怎么办</pattern>
+      <template>
+         不知道怎么办时，可以去问<star/>
+      </template>
+      </category>
+
+      <category>
+      <pattern>*怎么办*</pattern>
+      <template>
+         说起阿里巴巴，我最先想到的就是我马云爸爸！！
+      </template>
+      </category>
+
+      <category>
+      <pattern>*咋办</pattern>
+      <template>
+         说起阿里巴巴，我最先想到的就是我马云爸爸！！
+      </template>
+      </category>
+
+      <category>
+      <pattern>*咋办*</pattern>
+      <template>
+         说起阿里巴巴，我最先想到的就是我马云爸爸！！
+      </template>
+      </category>
+
+
+
+
+<!-- 3.[北京|杭州|上海]买房[多少钱|有多贵]
+4.[北京|杭州|上海]房价*
+5. 
+6. *阿里巴巴*
+7. *[怎么|咋]样
+
+9. *[怎么|咋]办
+10. [地名]有什么*   -->  -->   
+
+
+
+
+
+</aiml>
+
+
+

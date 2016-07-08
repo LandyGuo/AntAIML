@@ -1,3 +1,4 @@
+#coding=utf-8
 """This file contains the default (English) substitutions for the
 PyAIML kernel.  These substitutions may be overridden by using the
 Kernel.loadSubs(filename) method.  The filename specified should refer
@@ -85,9 +86,29 @@ defaultPerson2 = {
     "yourself": "myself",
 }
 
+normal = {
+    u"啥":u"什 么",
+    u"哪 些":u"什 么",
+    u"玩 儿":u"玩",
+    u"多 长 时 间":u"多 久",
+    u"呀":u"",
+    u"啊":u"",
+    }
+
+
+
 
 # TODO: this list is far from complete
 defaultNormal = {
+
+    u"啥":u"什 么",
+    u"哪 些":u"什 么",
+    u"玩 儿":u"玩",
+    u"多 长 时 间":u"多 久",
+    u"呀":u"",
+    u"啊":u"",
+    
+
     "wanna": "want to",
     "gonna": "going to",
 

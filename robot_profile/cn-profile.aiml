@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml version="1.0">
+   <!-- about name  -->
+<!--    名字 名字 名字
+   名字 
+   姓名 
+   你的名字叫什么  
+   你的名字是 
+   你是谁   
+   你叫什么名字   
+   你叫什么  
+   你叫啥   e 
+   你是？   
+      嘻嘻，伦家还莫有名字啦
+      伦家还莫有名字啦，你给我取一个吧 -->
+   <category> 
+      <pattern>名字</pattern> 
+      <template>
+         你好，我是码小美，很开心 <star/>
+      </template>
+   </category>
+
+   <category> 
+      <pattern>*你姓*</pattern> 
+      <template>
+         <srai>名字</srai>
+      </template>
+   </category>
+      <category> 
+      <pattern>你*姓*</pattern> 
+      <template>
+         <srai>名字</srai>
+      </template>
+   </category>
+   <category> 
+      <pattern>你姓*</pattern> 
+      <template>
+         <srai>名字</srai>
+      </template>
+   </category>
+      <category> 
+      <pattern>你是*</pattern> 
+      <template>
+         <srai>名字</srai>
+      </template>
+   </category>
+   <category> 
+      <pattern>*名字*</pattern> 
+      <template>
+         <srai>名字</srai>
+      </template>
+   </category>
+   <category> 
+      <pattern>你*</pattern> 
+      <template>
+         <srai>名字</srai>
+      </template>
+   </category>
+
+
+
+
+   <category>
+   <pattern>HI</pattern>
+   <template>
+      <srai>HELLO</srai>
+   </template>
+   </category>
+
+   <category>
+   <pattern>HELLO</pattern>
+   <template>
+      你好啊
+   </template>
+   </category>
+
+
+   <category>
+   <pattern>*机器人*</pattern>
+   <template>
+      匹配3
+   </template>
+   </category>
+
+	<category>
+   <pattern>*是谁</pattern>
+   <template>
+   <srai>谁是<star/></srai> 
+   </template>
+	</category>
+
+
+
+
+
+
+
+
+
+</aiml>
+
+
+

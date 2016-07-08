@@ -383,10 +383,13 @@ class Kernel:
 
         # run the input through the 'normal' subber
         input=u' '.join(splitChinese(input))
+        # input = u"".join(input.split()).strip()
+        print "input:",input
         if input.find(" ") < 0 :
             input=" "+input
-        subbedInput = u" ".join(self._subbers['normal'].sub(input).strip().split())
-        
+        print "sub:",self._subbers['normal'].sub(input)
+        subbedInput = u" ".join(splitChinese(self._subbers['normal'].sub(input)))
+        print "subbedInput:",subbedInput
         # fetch the bot's previous response, to pass to the match()
         # function as 'that'.
         outputHistory = self.getPredicate(self._outputHistory, sessionID)

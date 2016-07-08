@@ -38,9 +38,30 @@ def splitUnicode(s):
     return result
 
 def splitChinese(s):
-    
-    result = jb.cut(s)
+    # print "--------------------------"
+    s = u"".join(s.strip(u"?？！!,，。.").split())
+    result = []
+    if all([isChinese(c) for c in s if c!="*" and c!="_"]):
+        result = list(s)
+        # print 1
+    else:
+        # print 2
+        tmp = jb.cut(s)
+        for x in tmp:
+            ChineseWord =False
+            for c in x:
+                if isChinese(c):
+                    ChineseWord = True
+                    break
+            if ChineseWord:
+                # print x,"is chinese"
+                result.extend(list(x))
+            else:
+                # print x,"is not chinese"
+                result.append(x)
+    # print result
     ret = '|'.join(result)
+    # print "jb:",ret
     return ret.split("|")
 
 def mergeChineseSpace(s):
