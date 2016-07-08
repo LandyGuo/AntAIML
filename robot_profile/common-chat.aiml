@@ -13,18 +13,14 @@
 9.从[地名]到[地名]要[多久|多长时间]
 10.[北京|杭州|上海]有多大 -->
 
-<!-- 1.*是[什么|啥] -->
+<!-- 1.*是什么 -->
    <category> 
       <pattern>*是什么</pattern> 
       <template>
-         你好,我不知道<star index="1"/>是什么
-      </template>
-   </category>
-
-   <category> 
-      <pattern>*是啥</pattern> 
-      <template>
-         你好,<star index="1"/>是什么我怎么知道，不过我可以帮你在神马上查查
+         <random>
+              <li>你好,<star index="1"/>是什么我怎么知道，不过我可以帮你在神马上查查</li>
+               <li>你好,我不知道<star index="1"/>是什么</li>
+         </random>
       </template>
    </category>
 
@@ -83,7 +79,7 @@
 
 
    <category> 
-      <pattern>有什么*的</pattern> 
+      <pattern>有什么*的*</pattern> 
       <template>
          <condition>
          <li name="city" value="">你现在在什么地方?</li>
@@ -102,7 +98,7 @@
       </template>
    </category>
 
-   <category> 
+      <category> 
       <pattern>*有什么*的*</pattern> 
       <template>
          <think><set name="city"> <star index="1"/>  </set> </think>
@@ -113,67 +109,7 @@
 
 
 
-   <category> 
-      <pattern>有哪些*的</pattern> 
-      <template>
-         <condition>
-         <li name="city" value="">你现在在什么地方?</li>
-         <li> 你现在在<get name="city"/> 吗？我给你找了当地一些<star index="1"/>的：
-         蚂蚁金服。。。 </li>
-       </condition>
-      </template>
-   </category>
 
-      <category> 
-      <pattern>*有哪些*的*</pattern> 
-      <template>
-         <think><set name="city"> <star index="1"/>  </set> </think>
-         你现在在<star index="1"/> 吗？我给你找了当地一些<star index="2"/>的：
-         蚂蚁金服。。。
-      </template>
-   </category>
-
-   <category> 
-      <pattern>*有哪些*的</pattern> 
-      <template>
-         <think><set name="city"> <star index="1"/>  </set> </think>
-         你现在在<star index="1"/> 吗？我给你找了当地一些<star index="2"/>的：
-         蚂蚁金服。。。
-      </template>
-   </category>
-
-
-
-
-   <category> 
-      <pattern>有啥*的</pattern> 
-      <template>
-         <condition>
-         <li name="city" value="">你现在在什么地方?</li>
-         <li> 你现在在<get name="city"/> 吗？我给你找了当地一些<star index="1"/>的：
-         蚂蚁金服。。。 </li>
-       </condition>
-      </template>
-   </category>
-
-      <category> 
-      <pattern>*有啥*的</pattern> 
-      <template>
-         <think><set name="city"> <star index="1"/>  </set> </think>
-         你现在在<star index="1"/> 吗？我给你找了当地一些<star index="2"/>的：
-         蚂蚁金服。。。
-      </template>
-   </category>
-
-
-      <category> 
-      <pattern>*有啥*的*</pattern> 
-      <template>
-         <think><set name="city"> <star index="1"/>  </set> </think>
-         你现在在<star index="1"/> 吗？我给你找了当地一些<star index="2"/>的：
-         蚂蚁金服。。。
-      </template>
-   </category>
 
 <!-- 3.[人名]是谁？ -->
 
