@@ -44,7 +44,7 @@ class WordSub(dict):
         if word != "" and word[0].isalpha() and word[-1].isalpha():
             if unicode(word[0]) >= u'\u4e00' and unicode(word[0]) <=u'\u9fa5' :
                 # return "\s(%s)\s|\s(%s)$" %(word,word)
-                return "\s(%s)\s|\s(%s)$|^(%s)" %(word,word,word)
+                return "\s(%s)\s|\s(%s)$" %(word,word)
             else :
                 return "\\b%s\\b" % re.escape(word)
         else:

@@ -39,7 +39,7 @@ def splitUnicode(s):
 
 def splitChinese(s):
     # print "--------------------------"
-    s = u"".join(s.strip(u"?？！!,，。.").split())
+    s = u"".join(s.strip(u"?？！!,，。.呀啊呢").split())
     result = []
     if all([isChinese(c) for c in s if c!="*" and c!="_"]):
         result = list(s)
