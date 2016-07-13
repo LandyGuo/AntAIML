@@ -22,4 +22,6 @@ k.respond("load aiml cnask")
 
 # Loop forever, reading user input from the command
 # line and printing responses.
+# question = u"习大大是谁？"
+# print k.respond(question)
 while True: print k.respond(raw_input("> "))

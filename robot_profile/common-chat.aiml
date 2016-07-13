@@ -11,7 +11,13 @@
 7.*好玩[儿]吗
 8.[地名]怎么去？
 9.从[地名]到[地名]要[多久|多长时间]
-10.[北京|杭州|上海]有多大 -->
+10.[北京|杭州|上海]有多大 
+11.[地名]美不美
+12. 阿里巴巴 
+13. *[怎么|咋]样 
+14. *[怎么|咋]办 
+15. *好吗 -->
+
 
 <!-- 1.*是什么 -->
    <category> 
@@ -27,6 +33,30 @@
 
 <!-- 2.[城市]有[什么|哪些|啥][好玩[儿]的|好吃的] -->
 <!-- 好玩儿的 -->
+
+
+
+   <category> 
+      <pattern>有什么*的</pattern> 
+      <template>
+         <condition>
+         <li name="city" value="">你现在在什么地方?</li>
+         <li> 你现在在<get name="city"/> 吗？我给你找了当地一些<star index="1"/>的：
+         蚂蚁金服。。。 </li>
+       </condition>
+      </template>
+   </category>
+
+   <category> 
+      <pattern>*有什么*的</pattern> 
+      <template>
+         <think><set name="city"> <star index="1"/>  </set> </think>
+         你现在在 <star index="1"/> 吗？我给你找了当地一些<star index="2"/>的：
+         蚂蚁金服。。。
+      </template>
+   </category>
+
+
 
    <category> 
       <pattern>*好*的</pattern> 
@@ -78,37 +108,6 @@
 
 
 
-   <category> 
-      <pattern>有什么*的*</pattern> 
-      <template>
-         <condition>
-         <li name="city" value="">你现在在什么地方?</li>
-         <li> 你现在在<get name="city"/> 吗？我给你找了当地一些<star index="1"/>的：
-         蚂蚁金服。。。 </li>
-       </condition>
-      </template>
-   </category>
-
-   <category> 
-      <pattern>*有什么*的</pattern> 
-      <template>
-         <think><set name="city"> <star index="1"/>  </set> </think>
-         你现在在<star index="1"/> 吗？我给你找了当地一些<star index="2"/>的：
-         蚂蚁金服。。。
-      </template>
-   </category>
-
-      <category> 
-      <pattern>*有什么*的*</pattern> 
-      <template>
-         <think><set name="city"> <star index="1"/>  </set> </think>
-         你现在在<star index="1"/> 吗？我给你找了当地一些<star index="2"/>的：
-         蚂蚁金服。。。
-      </template>
-   </category>
-
-
-
 
 
 <!-- 3.[人名]是谁？ -->
@@ -134,26 +133,13 @@
       </template>
    </category>
 
-   <category> 
-      <pattern>认识*吗*</pattern> 
-      <template>
-        <star index="1"/> 是我的偶像
-      </template>
-   </category>
-
       <category> 
-      <pattern>知道*吗*</pattern> 
+      <pattern>知道*吗</pattern> 
       <template>
          <star index="1"/> 是我的偶像
       </template>
    </category>
 
-   <category> 
-      <pattern>听过*吗*</pattern> 
-      <template>
-         <star index="1"/> 是我的偶像
-      </template>
-   </category>
 
 
 
@@ -165,7 +151,7 @@
 
 
 <category>
-  <pattern>外面热么</pattern>
+  <pattern>外面热吗</pattern>
   <template>
       你现在在<get name="city"/>,
       <system>python getweather.py <get name="where"/></system>
@@ -224,7 +210,7 @@
   <pattern>天气</pattern>
   <template>
     <condition>
-      <li name="city" value="">你现在在什么地方?</li>
+      <li name="city" value="">你现在在什么地方？</li>
       <li ><system>python getweather.py  <get name="city"/></system></li>
     </condition>
   </template>
@@ -233,16 +219,17 @@
 
 <category>
 <pattern>*</pattern>
-<that>你现在在什么地方</that>
+<that>你现在在什么地方？</that>
 <template>
-<think><set name="city"><star/> </set></think>
+<think><set name="city"><formal><star/></formal></set></think>
 <random>
-  <li><get name="where"/>是个好地方.</li>
-  <li>真希望我也在<get name="city"/>陪你.</li>
+  <li><get name="city"/>是个好地方.</li>
+  <li>真希望我也在<get name="city"/>, 陪你.</li>
   <li>我刚刚看了下<get name="city"/>的天气哦.</li>
 </random>
 </template>
 </category>
+
  
 
 
@@ -255,13 +242,6 @@
       </template>
    </category>
 
-    <category> 
-      <pattern>*好不好*</pattern> 
-      <template>
-         你们太年轻！<star index="1"/> 好不好不是我说的算，如果
-         要我说，我觉得挺好
-      </template>
-   </category>
 
 <!-- 6.*好吃吗  7.*好玩[儿]吗 -->
 
@@ -326,21 +306,21 @@
 
 
       <category>
-      <pattern>从*到*要*</pattern>
+      <pattern>从*到*要多久</pattern>
       <template>
          我从<star index="1"/>到<star index="2"/>只用一瞬间，很羡慕吧哈哈～～
       </template>
       </category>
 
       <category>
-      <pattern>*到*有*</pattern>
+      <pattern>*到*要多久</pattern>
       <template>
          我从<star index="1"/>到<star index="2"/>只用一瞬间，很羡慕吧哈哈～～
       </template>
       </category>
 
 
-<!-- 10.[北京|杭州|上海]有多大 --> -->
+<!-- 10.[北京|杭州|上海]有多大 --> 
       <category>
       <pattern>*有多大</pattern>
       <template>
@@ -371,7 +351,43 @@
       </template>
       </category>
 
-<!-- 12. 阿里巴巴 -->
+
+
+<!-- 12. *[怎么|咋]样 -->
+   <category>
+      <pattern>*怎么样</pattern>
+      <template>
+         我要是说<star index="1"/>不好，你又觉得我too young！！当然挺不错的啊～
+      </template>
+      </category>
+
+
+<!-- 13. *[怎么|咋]办 -->
+      <category>
+      <pattern>*怎么办</pattern>
+      <template>
+         不知道怎么办时，可以去问神马～～
+      </template>
+      </category>
+
+      <category>
+      <pattern>*怎么办*</pattern>
+      <template>
+         让神马来告诉你，<star index="1"/>怎么办
+      </template>
+      </category>
+
+
+<!-- 14. *好吗 -->
+      <category>
+      <pattern>*好吗</pattern>
+      <template>
+         当然好了，我最爱<star index="1"/>了
+      </template>
+      </category>
+
+
+<!-- 15. 阿里巴巴 -->
       <category>
       <pattern>*阿里巴巴</pattern>
       <template>
@@ -402,49 +418,37 @@
 
 
 
-<!-- 13. *[怎么|咋]样 -->
-   <category>
-      <pattern>*怎么样</pattern>
-      <template>
-         说起阿里巴巴，我最先想到的就是我马云爸爸！！
-      </template>
-      </category>
 
-
-   <category>
-      <pattern>*咋样</pattern>
-      <template>
-         说起阿里巴巴，我最先想到的就是我马云爸爸！！
-      </template>
-      </category>
-
-
-<!-- 14. *[怎么|咋]办 -->
+<!--16. 
+     xxx基金什么时间可以买
+     xxx基金什么时候可以卖
+     现在行情是什么样的/行情如何
+ -->
       <category>
-      <pattern>*怎么办</pattern>
+      <pattern>*基金什么时间可以*</pattern>
       <template>
-         不知道怎么办时，可以去问<star/>
+         买卖基金？没有买卖就没有杀害！
       </template>
       </category>
 
       <category>
-      <pattern>*怎么办*</pattern>
+      <pattern>什么时间可以*基金</pattern>
       <template>
-         说起阿里巴巴，我最先想到的就是我马云爸爸！！
+        买卖基金？没有买卖就没有杀害！啊
       </template>
       </category>
 
       <category>
-      <pattern>*咋办</pattern>
+      <pattern>现在行情怎么样</pattern>
       <template>
-         说起阿里巴巴，我最先想到的就是我马云爸爸！！
+         <srai>行情怎么样</srai>
       </template>
       </category>
 
       <category>
-      <pattern>*咋办*</pattern>
+      <pattern>行情怎么样</pattern>
       <template>
-         说起阿里巴巴，我最先想到的就是我马云爸爸！！
+         我要能知道行情怎么样，我还在这当机器人？哼
       </template>
       </category>
 
@@ -458,7 +462,7 @@
 7. *[怎么|咋]样
 
 9. *[怎么|咋]办
-10. [地名]有什么*   -->  -->   
+10. [地名]有什么*   -->  
 
 
 

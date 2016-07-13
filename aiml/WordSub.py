@@ -22,7 +22,7 @@ The following example illustrates this point:
 Note that "he" and "he'd" were replaced, but "help" and "her" were
 not.
 """
-from DefaultSubs import normal 
+from DefaultSubs import defaultNormal 
 
 # 'dict' objects weren't available to subclass from until version 2.2.
 # Get around this by importing UserDict.UserDict if the built-in dict
@@ -44,7 +44,7 @@ class WordSub(dict):
         if word != "" and word[0].isalpha() and word[-1].isalpha():
             if unicode(word[0]) >= u'\u4e00' and unicode(word[0]) <=u'\u9fa5' :
                 # return "\s(%s)\s|\s(%s)$" %(word,word)
-                return "\s(%s)\s|\s(%s)$" %(word,word)
+                return "\s(%s)\s|\s(%s)$|^(%s)" %(word,word,word)
             else :
                 return "\\b%s\\b" % re.escape(word)
         else:
@@ -100,7 +100,7 @@ class InputPreprocess(object):
 
 # self-test
 if __name__ == "__main__":
-    subber = ChineseWordSub(normal)
+    subber = ChineseWordSub(defaultNormal)
     print subber
     # test case insensitivity
     import LangSupport

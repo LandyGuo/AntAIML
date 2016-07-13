@@ -18,11 +18,18 @@ def queryRealTimeWeatherInfo(city):
     resp = requests.get(url)
     data = json.loads(resp.text)
     # print(data)
-    if not data:
-        print(u"天气预报还没出来")
-    return data['data']['forecast'][0]
+    ret = None
+    try:
+        ret = data['data']['forecast'][0]
+    except:
+        # print(u"天气预报还没出来")
+        return None
+    return ret
 
 def showRealTimeWeatherInfo(city,info):
+    if info==None:
+        print("不知道",city,"是哪里")
+        return
     print(city+":")
     template = u"{date} {type} 天气实况: 气温:{low}-{high}"
     print(template.format(**info))
