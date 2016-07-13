@@ -319,6 +319,20 @@
       </template>
       </category>
 
+      <category>
+      <pattern>*到*要多久</pattern>
+      <template>
+         我从<star index="1"/>到<star index="2"/>只用一瞬间，很羡慕吧哈哈～～
+      </template>
+      </category>
+
+            <category>
+      <pattern>*到*要多久</pattern>
+      <template>
+         我从<star index="1"/>到<star index="2"/>只用一瞬间，很羡慕吧哈哈～～
+      </template>
+      </category>
+
 
 <!-- 10.[北京|杭州|上海]有多大 --> 
       <category>
@@ -328,24 +342,11 @@
       </template>
       </category>
 
-      <category>
-      <pattern>*有多大*</pattern>
-      <template>
-        <star index="1"/>开车从三环到五环需要一整天！
-      </template>
-      </category>
 
 
 <!-- 11.[地名]美不美 -->
    <category>
       <pattern>*美不美</pattern>
-      <template>
-         我觉得<star index="1"/>挺美
-      </template>
-      </category>
-
-      <category>
-      <pattern>*美不美*</pattern>
       <template>
          我觉得<star index="1"/>挺美
       </template>
@@ -366,14 +367,11 @@
       <category>
       <pattern>*怎么办</pattern>
       <template>
-         不知道怎么办时，可以去问神马～～
-      </template>
-      </category>
-
-      <category>
-      <pattern>*怎么办*</pattern>
-      <template>
-         让神马来告诉你，<star index="1"/>怎么办
+         <random>
+            <li>不知道怎么办时，可以去问神马～～</li>
+            <li>让神马来告诉你，<star index="1"/>怎么办</li>
+            <li>真希望我能知道<star index="1"/>怎么办。。</li>
+         </random>
       </template>
       </category>
 
