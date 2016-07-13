@@ -61,30 +61,24 @@
    <category> 
       <pattern>*好*的</pattern> 
       <template>
-         <srai>好<star index="2"/>的</srai>
+         <srai>好玩儿的</srai>
       </template>
    </category>
 
    <category> 
       <pattern>*好*的*</pattern> 
       <template>
-         <srai>好*的</srai>
+         <srai>好玩儿的</srai>
       </template>
    </category>
 
    <category> 
       <pattern>好*的*</pattern> 
       <template>
-         <srai>好*的</srai>
+         <srai>好玩儿的</srai>
       </template>
    </category>
 
-   <category> 
-      <pattern>*好*的</pattern> 
-      <template>
-         <srai>好*的</srai>
-      </template>
-   </category>
 
    <category> 
       <pattern>好*的</pattern> 
@@ -210,7 +204,7 @@
   <pattern>天气</pattern>
   <template>
     <condition>
-      <li name="city" value="">你现在在什么地方？</li>
+      <li name="city" value="">你现在在什么地方?</li>
       <li ><system>python getweather.py  <get name="city"/></system></li>
     </condition>
   </template>
@@ -226,6 +220,7 @@
   <li><get name="city"/>是个好地方.</li>
   <li>真希望我也在<get name="city"/>, 陪你.</li>
   <li>我刚刚看了下<get name="city"/>的天气哦.</li>
+
 </random>
 </template>
 </category>
@@ -306,28 +301,28 @@
 
 
       <category>
-      <pattern>从*到*要多久</pattern>
+      <pattern>从*到*多远</pattern>
       <template>
          我从<star index="1"/>到<star index="2"/>只用一瞬间，很羡慕吧哈哈～～
       </template>
       </category>
 
       <category>
-      <pattern>*到*要多久</pattern>
+      <pattern>*到*多远</pattern>
       <template>
          我从<star index="1"/>到<star index="2"/>只用一瞬间，很羡慕吧哈哈～～
       </template>
       </category>
 
       <category>
-      <pattern>*到*要多久</pattern>
+      <pattern>*到*多久</pattern>
       <template>
          我从<star index="1"/>到<star index="2"/>只用一瞬间，很羡慕吧哈哈～～
       </template>
       </category>
 
-            <category>
-      <pattern>*到*要多久</pattern>
+      <category>
+      <pattern>从*到*多久</pattern>
       <template>
          我从<star index="1"/>到<star index="2"/>只用一瞬间，很羡慕吧哈哈～～
       </template>
@@ -336,7 +331,7 @@
 
 <!-- 10.[北京|杭州|上海]有多大 --> 
       <category>
-      <pattern>*有多大</pattern>
+      <pattern>*多大</pattern>
       <template>
          <star index="1"/>开车从三环到五环需要一整天！
       </template>
@@ -423,14 +418,14 @@
      现在行情是什么样的/行情如何
  -->
       <category>
-      <pattern>*基金什么时间可以*</pattern>
+      <pattern>*基金什么时间*</pattern>
       <template>
          买卖基金？没有买卖就没有杀害！
       </template>
       </category>
 
       <category>
-      <pattern>什么时间可以*基金</pattern>
+      <pattern>什么时间*基金</pattern>
       <template>
         买卖基金？没有买卖就没有杀害！啊
       </template>
@@ -444,14 +439,14 @@
       </category>
 
       <category>
-      <pattern>要不要买*基金</pattern>
+      <pattern>*要不要买*基金</pattern>
       <template>
         买卖基金？没有买卖就没有杀害！啊
       </template>
       </category>
 
       <category>
-      <pattern>现在行情怎么样</pattern>
+      <pattern>*行情怎么样</pattern>
       <template>
          <srai>行情怎么样</srai>
       </template>
