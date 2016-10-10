@@ -18,6 +18,8 @@ import sys
 import time
 import threading
 import xml.sax
+import logging
+
 
 
 class Kernel:
@@ -29,6 +31,13 @@ class Kernel:
     _inputHistory = "_inputHistory"     # keys to a queue (list) of recent user input
     _outputHistory = "_outputHistory"   # keys to a queue (list) of recent responses.
     _inputStack = "_inputStack"         # Should always be empty in between calls to respond()
+    #indicate star match type
+    _object = 0
+    _people = 1
+    #templates type
+    _templateTypes = ['object','people','default','other']
+
+
 
     def __init__(self, sessionStore=None):
         self._verboseMode = True
@@ -36,6 +45,7 @@ class Kernel:
         self._brain = PatternMgr()
         self._respondLock = threading.RLock()
         self._textEncoding = "utf-8"
+
 
         # set up the sessions
         if sessionStore is not None:
@@ -290,7 +300,8 @@ class Kernel:
         will be loaded and learned.
 
         """
-        for f in glob.glob(filename):
+        for f in glob.glob(filename):#regular matching all files
+            logging.info("Loading File:%s" % f)
             if self._verboseMode: print "Loading %s..." % f,
             start = time.clock()
             # Load and parse the AIML file.
@@ -308,6 +319,7 @@ class Kernel:
             # Parsing was successful.
             if self._verboseMode:
                 print "done (%.2f seconds)" % (time.clock() - start)
+                self._brain.dump()
 
     def respond(self, input, sessionID = _globalSessionID):
         """Return the Kernel's response to the input string."""
@@ -327,6 +339,9 @@ class Kernel:
 
         # split the input into discrete sentences
         sentences = Utils.sentences(input)
+
+        logging.info("Sentences:"+str(sentences))
+
         finalResponse = ""
 
         for s in sentences:
@@ -384,12 +399,12 @@ class Kernel:
         # run the input through the 'normal' subber
         input=u' '.join(splitChinese(input))
         # input = u"".join(input.split()).strip()
-        print "input:",input
+        logging.info("Input:"+input)
         if input.find(" ") < 0 :
             input=" "+input
-        print "sub:",self._subbers['normal'].sub(input)
+        logging.info("Sub:"+self._subbers['normal'].sub(input))
         subbedInput = u" ".join(splitChinese(self._subbers['normal'].sub(input)))
-        print "subbedInput:",subbedInput
+        logging.info("SubbedInput:"+subbedInput)
         # fetch the bot's previous response, to pass to the match()
         # function as 'that'.
         outputHistory = self.getPredicate(self._outputHistory, sessionID)
@@ -401,9 +416,29 @@ class Kernel:
         topic = self.getPredicate("topic", sessionID)
         subbedTopic = self._subbers['normal'].sub(topic)
 
+        #eternity recognition in input
+        #remove last eternity recognition results
+        subbedTopic = re.sub("|".join(self._templateTypes),"",subbedTopic).strip()
+        if "object" in subbedInput:#recognize as object
+            subbedTopic+=(" "+"object")
+        elif "people" in subbedInput:#recognize as people
+            subbedTopic+=(" "+"people")
+        elif "other" in subbedInput:#recognize as people
+            subbedTopic+=(" "+"other")
+        else:#recognize as default
+            subbedTopic+=(" "+"default")
+        #加上一个真正的topic
+        if subbedTopic.strip() in self._templateTypes:
+             subbedTopic = " ".join(["ULTRABOGUSDUMMYTOPIC",subbedTopic.strip()])
+        self.setPredicate("topic",subbedTopic,sessionID)
+
+        # self._brain.star("star", subbedInput, subbedThat, subbedTopic, index)
         # Determine the final response.
         response = ""
         elem = self._brain.match(subbedInput, subbedThat, subbedTopic)
+
+        logging.info("Matched Elem:"+str(elem))
+
         if elem is None:
             if self._verboseMode:
                 err = "WARNING: No match found for input: %s\n" % input.encode(self._textEncoding)
@@ -764,10 +799,14 @@ class Kernel:
 
         """
         response = ""
+        # print("elem:",elem)
         for e in elem[2:]:
             response += self._processElement(e, sessionID)
         if len(elem[2:]) == 0:  # atomic <person2/> = <person2><star/></person2>
             response = self._processElement(['star',{}], sessionID)
+        # print("response:")
+        response += " "
+        # print self._subbers['person2'].sub(response)
         return self._subbers['person2'].sub(response)
 
     # <random>
@@ -886,13 +925,35 @@ class Kernel:
         except KeyError: index = 1
         # fetch the user's last input
         inputStack = self.getPredicate(self._inputStack, sessionID)
-        input = self._subbers['normal'].sub(inputStack[-1])
+        # input = self._subbers['normal'].sub(inputStack[-1])
+        input = inputStack[-1]
+        #进行汉语处理
+        input=u' '.join(splitChinese(input))
+        # input = u"".join(input.split()).strip()
+        if input.find(" ") < 0 :
+            input=" "+input
+        subbedInput = u" ".join(splitChinese(self._subbers['normal'].sub(input)))
         # fetch the Kernel's last response (for 'that' context)
         outputHistory = self.getPredicate(self._outputHistory, sessionID)
         try: that = self._subbers['normal'].sub(outputHistory[-1])
         except: that = "" # there might not be any output yet
         topic = self.getPredicate("topic", sessionID)
+        logging.debug("Star Input:"+input)
+        logging.debug("Star Topic:"+topic)
+        # topic = "ULTRABOGUSDUMMYTOPIC PEOPLE"#for debug
         response = self._brain.star("star", input, that, topic, index)
+        logging.info("Star:"+response)
+
+        #在这里对star的内容加上实体识别
+        #pick eternity from the matched star
+        # if star=="object":#recognized as object
+        #     self._intent_topic = self._object
+        # if star=="people":
+        #     self._intent_topic = self._people
+
+
+
+
         return response
 
     # <system>

@@ -15,14 +15,15 @@ ENCODING = 'utf-8'
 def queryRealTimeWeatherInfo(city):
     #url = "http://m.weather.com.cn/data/%s.html" % code
     url = "http://wthrcdn.etouch.cn/weather_mini?city="+city
+    print url
     resp = requests.get(url)
-    data = json.load(resp)
+    print(resp.text)
+    data = json.loads(resp.text)
     if not data:
         print(u"天气预报还没出来".encode(ENCODING))
     return data['data']['forecast'][0]
 
 def showRealTimeWeatherInfo(city,info):
-    print(city.encode(ENCODING))
     template = u"{date} {type} 天气实况: 气温:{low}-{high}"
     print(template.format(**info).encode(ENCODING))
 

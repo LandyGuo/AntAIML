@@ -2,7 +2,7 @@
 
 <category>
 <pattern>LOAD AIML CNASK</pattern>
-<template>
+<template type="122233">
 
 <!-- Load AIML set -->
 <!-- <learn>cn-profile.aiml</learn> -->

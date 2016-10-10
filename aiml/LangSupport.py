@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-
-import jieba as jb
+# from utils.ali_ws import word_seg_original
+import jieba
 import re
 a=u"([\u4e00-\u9fa5]+)( +)" 
 b=u"( +)([\u4e00-\u9fa5]+)"
@@ -25,6 +25,8 @@ def isChinese(c):
         (0x31C0, 0x31EF)]
     return any(s <= ord(c) <= e for s, e in r)
 
+def isEnglish(c):
+    return (ord('a')<=ord(c)<=ord('z')) or (ord('A')<=ord(c)<=ord('Z'))
 
 def splitUnicode(s):
     assert type(s) == unicode, "string must be a unicode"
@@ -37,17 +39,20 @@ def splitUnicode(s):
             result.append(seg)
     return result
 
+
 def splitChinese(s):
-    # print "--------------------------"
-    s = u"".join(s.strip(u"?？！!,，。.呀啊呢").split())
     result = []
+    #pure english
+    if all([isEnglish(c) for c in s if c!="*" and c!="_" and c!=" "]):
+        return s.split()
+    s = u"".join(s.strip(u"?？！!,，。.呀啊呢").split())
+    #pure chinese
     if all([isChinese(c) for c in s if c!="*" and c!="_" and c!=" "]):
         result = list(s)
-        # print 'chinese'
-        # print 1
+    #english and chinese
     else:
-        # print 2
-        tmp = jb.cut(s)
+        # tmp = word_seg_original(s).split()
+        tmp = jieba.cut(s)
         for x in tmp:
             ChineseWord =False
             for c in x:
@@ -60,9 +65,7 @@ def splitChinese(s):
             else:
                 # print x,"is not chinese"
                 result.append(x)
-    # print result
     ret = '|'.join(result)
-    # print "jb:",ret
     return ret.split("|")
 
 def mergeChineseSpace(s):

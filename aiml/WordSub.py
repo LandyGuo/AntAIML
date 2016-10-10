@@ -22,7 +22,7 @@ The following example illustrates this point:
 Note that "he" and "he'd" were replaced, but "help" and "her" were
 not.
 """
-from DefaultSubs import defaultNormal 
+from DefaultSubs import defaultNormal,defaultPerson2
 
 # 'dict' objects weren't available to subclass from until version 2.2.
 # Get around this by importing UserDict.UserDict if the built-in dict
@@ -43,7 +43,6 @@ class WordSub(dict):
         """Convert a word to a regex object which matches the word."""
         if word != "" and word[0].isalpha() and word[-1].isalpha():
             if unicode(word[0]) >= u'\u4e00' and unicode(word[0]) <=u'\u9fa5' :
-                # return "\s(%s)\s|\s(%s)$" %(word,word)
                 return "\s(%s)\s|\s(%s)$|^(%s)\s" %(word,word,word)
             else :
                 return "\\b%s\\b" % re.escape(word)
@@ -55,7 +54,7 @@ class WordSub(dict):
         dictionary.
 
         """
-        self.regex = re.compile("|".join(map(self.wordToRegex, self.keys())))
+        self.patterns = [re.compile(pattern) for pattern in map(self.wordToRegex, self.keys())]
         self.regexIsDirty = False
 
     def __init__(self, defaults = {}):
@@ -90,7 +89,9 @@ class WordSub(dict):
         """Translate text, returns the modified text."""
         if self.regexIsDirty:
             self.update_regex()
-        return self.regex.sub(self, text)
+        for pattern in self.patterns:
+            text = pattern.sub(self,text)
+        return text
 
 
 
@@ -100,11 +101,11 @@ class InputPreprocess(object):
 
 # self-test
 if __name__ == "__main__":
-    subber = ChineseWordSub(defaultNormal)
+    subber = WordSub(defaultPerson2)
     print subber
     # test case insensitivity
     import LangSupport
-    inStr =  u"北京有啥好玩儿的"
+    inStr =  u"我 爱 你 "
     outStr = u"北京有什么好玩的"
     # instr = u' '.join(LangSupport.splitChinese(inStr))
     print (inStr)

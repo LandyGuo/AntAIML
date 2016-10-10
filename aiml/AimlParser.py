@@ -1,3 +1,4 @@
+#coding='utf-8'
 from xml.sax.handler import ContentHandler
 from xml.sax.xmlreader import Locator
 import sys
@@ -5,6 +6,14 @@ import xml.sax
 import xml.sax.handler
 
 from LangSupport import splitChinese
+
+import logging
+
+# #TODO:
+# logging.basicConfig(level=logging.ERROR,  
+#                     format='%(asctime)s %(filename)s [line:%(lineno)d] %(funcName)s %(levelname)s: %(message)s',  
+#                     datefmt='%a, %d %b %Y %H:%M:%S')
+# logging.
 
 class AimlParserError(Exception): pass
 
@@ -88,9 +97,11 @@ class AimlHandler(ContentHandler):
                 stack element is duplicated.
 
                 """
+                logging.debug(self._whitespaceBehaviorStack)
                 assert len(self._whitespaceBehaviorStack) > 0, "Whitespace behavior stack should never be empty!"
                 try:
                         if attr["xml:space"] == "default" or attr["xml:space"] == "preserve":
+                                logging.debug(attr["xml:space"])
                                 self._whitespaceBehaviorStack.append(attr["xml:space"])
                         else:
                                 raise AimlParserError, "Invalid value for xml:space attribute "+self._location()
@@ -117,7 +128,6 @@ class AimlHandler(ContentHandler):
                 # it's finished.
                 if self._skipCurrentCategory:
                         return
-
                 # process this start-element.
                 try: self._startElement(name, attr)
                 except AimlParserError, msg:
@@ -191,14 +201,19 @@ class AimlHandler(ContentHandler):
                 elif name == "template":
                         # <template> tags are only legal in the AfterPattern and AfterThat
                         # states
-                        if self._state not in [self._STATE_AfterPattern, self._STATE_AfterThat]:
+                        if self._state not in [self._STATE_AfterPattern, self._STATE_AfterThat, self._STATE_AfterTemplate]:#support multi-template matching
+                                logging.debug("Error Occurs During parsing Template")
                                 raise AimlParserError, "Unexpected <template> tag "+self._location()
                         # if no <that> element was specified, it is implicitly set to *
                         if self._state == self._STATE_AfterPattern:
                                 self._currentThat = u"*"
                         self._state = self._STATE_InsideTemplate
-                        self._elemStack.append(['template',{}])
+                        
+                        logging.debug(attr.get('type','default'))
+                        self._elemStack.append(['template',attr.get('type','default')])
                         self._pushWhitespaceBehavior(attr)
+                        logging.debug("Begin Template")
+
                 elif self._state == self._STATE_InsidePattern:
                         # Certain tags are allowed inside <pattern> elements.
                         if name == "bot" and attr.has_key("name") and attr["name"] == u"name":
@@ -297,6 +312,9 @@ class AimlHandler(ContentHandler):
                         # Add a new text element to the element at the top of the element
                         # stack. If there's already a text element there, simply append the
                         # new characters to its contents.
+
+                        logging.debug("In Template: ADD Text Element")
+
                         try: textElemOnStack = (self._elemStack[-1][-1][0] == "text")
                         except IndexError: textElemOnStack = False
                         except KeyError: textElemOnStack = False
@@ -304,7 +322,8 @@ class AimlHandler(ContentHandler):
                                 self._elemStack[-1][-1][2] += text
                         else:
                                 self._elemStack[-1].append(["text", {"xml:space": self._whitespaceBehaviorStack[-1]}, text])
-                else:
+                        logging.debug("elemStack:"+str(self._elemStack))
+                else:   
                         # all other text is ignored
                         pass
 
@@ -371,8 +390,22 @@ class AimlHandler(ContentHandler):
                         # End the current category.  Store the current pattern/that/topic and
                         # element in the categories dictionary.
                         self._currentPattern = u' '.join(splitChinese(self._currentPattern))
-                        key = (self._currentPattern.strip(), self._currentThat.strip(),self._currentTopic.strip())
-                        self.categories[key] = self._elemStack[-1]
+
+                        for template in self._elemStack:
+                                key = (self._currentPattern.strip(), self._currentThat.strip(),
+                                        # template[1].strip())
+                                        self._currentTopic.strip()+" "+template[1].strip())
+                                self.categories[key] = template
+                                logging.info("-"*80)
+                                logging.info("ADD Pattern:"+str(key))
+                                logging.info("ADD Template:"+str(template))
+                                logging.info("-"*80)
+
+                        # key = (self._currentPattern.strip(), self._currentThat.strip(),self._currentTopic.strip())
+                        # self.categories[key] = self._elemStack[-1]
+                        logging.debug("-"*80)
+                        logging.debug("End Category:"+str(self._elemStack))
+                        logging.debug("-"*80)
                         self._whitespaceBehaviorStack.pop()
                 elif name == "pattern":
                         # </pattern> tags are only legal in the InsidePattern state
@@ -441,7 +474,7 @@ class AimlHandler(ContentHandler):
                 "srai":         ( [], [], True ),
                 "star":         ( [], ["index"], False ),
                 "system":       ( [], [], True ),
-                "template":		( [], [], True ), # needs to be in the list because it can be a parent.
+                "template":		( [], ["type"], True ), # needs to be in the list because it can be a parent.
                 "that":         ( [], ["index"], False ),
                 "thatstar":     ( [], ["index"], False ),
                 "think":        ( [], [], True ),

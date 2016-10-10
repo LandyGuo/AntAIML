@@ -1,53 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <aiml version="1.0">
-   <category> 
-      <pattern>你好 ALICE </pattern> 
-      <template>
-         你好，你是谁呢？ <star/>
-      </template>
-   </category>
 
+<!-- Free software (c) 2012 andelf -->
+<!-- This program is open source code released under -->
+<!-- the terms of the GNU General Public License -->
+<!-- as published by the Free Software Foundation. -->
 
+<meta name="author" content="Andelf"/>
+<meta name="language" content="zh"/>
 
-   <category>
-   <pattern>HI</pattern>
+<category>
+<!-- match pattern -->
+<pattern>*怎么样</pattern>
+<!-- template for object -->
+<template type='object'>
+   <star/>用起来不错
+   <random>
+      <li>你好啊</li>
+      <li>what the fuck</li>
+   </random>
+</template>
+<!-- template for people -->
+<template type='people'>
+   <star/>很好啊，待人很和善
+</template>
+<!-- template for default -->
+<template type='default'>
+   不太清楚额
+</template>
+</category>
+
+<!-- <category>
+  <pattern>+你好 hello</pattern> 
    <template>
-      <srai>HELLO</srai>
-   </template>
-   </category>
+   你好啊1
+</template>
+   <template type="other">
+   你好啊1wqwq 
+</template>
+</category> -->
 
-   <category>
-   <pattern>HELLO</pattern>
+<category>
+  <pattern>hello</pattern>
    <template>
-      你好啊
-   </template>
-   </category>
+      <random>
+         <li><srai> 北京怎么样</srai> </li>
+         <li><srai> 北京people怎么样</srai> </li>
+         <li><srai> 北京object怎么样</srai> </li>
+      </random>
+   
+</template>
+</category>
 
 
-   <category>
-   <pattern>*机器人*</pattern>
+
+<!-- <category>
+  <pattern>+你好</pattern> 
    <template>
-      匹配3
-   </template>
-   </category>
-
-	<category>
-   <pattern>*是谁</pattern>
-   <template>
-   <srai>谁是<star/></srai> 
-   </template>
-	</category>
-
-
-
-
-
-
+   你好啊3<star/>
+</template>
+</category> -->
 
 
 
 </aiml>
-
-
-
