@@ -2,7 +2,7 @@
 
 ## PyAIML 中文支持
 
-中文支持维护(current maintainer): LandyGuo (gqp@gmail.com)
+中文支持维护(current maintainer): LandyGuo (gqp.hust@gmail.com)
 
 <img src="https://raw.github.com/andelf/PyAIML/master/screenshot.jpg" />
 
