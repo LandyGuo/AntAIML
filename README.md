@@ -4,8 +4,6 @@
 
 中文支持维护(current maintainer): LandyGuo (gqp.hust@gmail.com)
 
-<img src="https://raw.github.com/andelf/PyAIML/master/screenshot.jpg" />
-
 NOTE:
 
 - 2016/10/10重大更新
