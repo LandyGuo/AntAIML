@@ -238,63 +238,90 @@ class PatternMgr:
                 # At the end of this loop, if foundTheRightStar is true, start and
                 # end will contain the start and end indices (in "words") of
                 # the substring that the desired star matched.
-                foundTheRightStar = False
-                start = end = j = numStars = k = 0
-                for i in range(len(words)):
-                        # This condition is true after processing a star
-                        # that ISN'T the one we're looking for.
-                        if i < k:
-                                continue
-                        # If we're reached the end of the pattern, we're done.
-                        if j == len(patMatch):
-                                break
-                        if not foundTheRightStar:
-                                if patMatch[j] in [self._STAR, self._UNDERSCORE,self._MULTI_STAR]: #we got a star
-                                        numStars += 1
-                                        if numStars == index:
-                                                # This is the star we care about.
-                                                foundTheRightStar = True
-                                        start = i
-                                        # Iterate through the rest of the string.
-                                        for k in range (i, len(words)):
-                                                # If the star is at the end of the pattern,
-                                                # we know exactly where it ends.
-                                                if j+1  == len (patMatch):
-                                                        end = len (words)
-                                                        break
-                                                # If the words have started matching the
-                                                # pattern again, the star has ended.
-                                                # FIXED: for pattch "* A B", "A C A B" will match
-                                                # and this is a bug
-                                                if patMatch[j+1] == words[k]:
-                                                        tj = j+1 + 1
-                                                        tk = k + 1
-                                                        ok = True
-                                                        while tj < len(patMatch) and tk < len(words):
-                                                                if patMatch[tj] in [self._STAR, self._UNDERSCORE,self._MULTI_STAR]:
-                                                                        break
-                                                                if patMatch[tj] != words[tk]:
-                                                                        ok = False
-                                                                        break
-                                                                tj += 1
-                                                                tk += 1
-                                                        if ok:
-                                                                end = k - 1
-                                                                i = k
-                                                                break
-                                # If we just finished processing the star we cared
-                                # about, we exit the loop early.
-                                if foundTheRightStar:
-                                        break
-                        # Move to the next element of the pattern.
-                        j += 1
+                logging.info("Star patMatch:"+str(patMatch))
+                logging.info("Star words:"+str(words))
+
+                #use Regular Matching instead 
+                stars_count = 0
+                words_match,pat_Match = u"", u""
+                for x in words:
+                    words_match += (x)
+                for x in patMatch:
+                    if x == self._STAR:
+                        pat_Match += ("(.+)")
+                        stars_count += 1
+                    elif x== self._MULTI_STAR:
+                        pat_Match += ("(.*)") 
+                        stars_count += 1 
+                    else:pat_Match += (x)
+                words_match,pat_Match = words_match.strip(),pat_Match.strip()
+                index = min(index,stars_count)#in case index are larger than number of stars
+                logging.info("Words_match_str:"+words_match)
+                logging.info("Pat_Match_str:"+pat_Match)
+                logging.info("Match Group Index:"+str(index))
+
+                match = re.compile(pat_Match).match(words_match)
+                if match:
+                    logging.info("Pat_Match_group:"+str(match.groups()))
+                    return match.groups()[index-1]
+                return ""
+                # foundTheRightStar = False
+                # start = end = j = numStars = k = 0
+                # for i in range(len(words)):
+                #         # This condition is true after processing a star
+                #         # that ISN'T the one we're looking for.
+                #         if i < k:
+                #                 continue
+                #         # If we're reached the end of the pattern, we're done.
+                #         if j == len(patMatch):
+                #                 break
+                #         if not foundTheRightStar:
+                #                 if patMatch[j] in [self._STAR, self._UNDERSCORE,self._MULTI_STAR]: #we got a star
+                #                         numStars += 1
+                #                         if numStars == index:
+                #                                 # This is the star we care about.
+                #                                 foundTheRightStar = True
+                #                         start = i
+                #                         # Iterate through the rest of the string.
+                #                         for k in range (i, len(words)):
+                #                                 # If the star is at the end of the pattern,
+                #                                 # we know exactly where it ends.
+                #                                 if j+1  == len (patMatch):
+                #                                         end = len (words)
+                #                                         break
+                #                                 # If the words have started matching the
+                #                                 # pattern again, the star has ended.
+                #                                 # FIXED: for pattch "* A B", "A C A B" will match
+                #                                 # and this is a bug
+                #                                 if patMatch[j+1] == words[k]:
+                #                                         tj = j+1 + 1
+                #                                         tk = k + 1
+                #                                         ok = True
+                #                                         while tj < len(patMatch) and tk < len(words):
+                #                                                 if patMatch[tj] in [self._STAR, self._UNDERSCORE,self._MULTI_STAR]:
+                #                                                         break
+                #                                                 if patMatch[tj] != words[tk]:
+                #                                                         ok = False
+                #                                                         break
+                #                                                 tj += 1
+                #                                                 tk += 1
+                #                                         if ok:
+                #                                                 end = k - 1
+                #                                                 i = k
+                #                                                 break
+                #                 # If we just finished processing the star we cared
+                #                 # about, we exit the loop early.
+                #                 if foundTheRightStar:
+                #                         break
+                #         # Move to the next element of the pattern.
+                #         j += 1
 
                 # extract the star words from the original, unmutilated input.
-                if foundTheRightStar:
-                        if starType == 'star': return string.join(pattern.split()[start:end+1])
-                        elif starType == 'thatstar': return string.join(that.split()[start:end+1])
-                        elif starType == 'topicstar': return string.join(topic.split()[start:end+1])
-                else: return ""
+                # if foundTheRightStar:
+                #         if starType == 'star': return string.join(pattern.split()[start:end+1])
+                #         elif starType == 'thatstar': return string.join(that.split()[start:end+1])
+                #         elif starType == 'topicstar': return string.join(topic.split()[start:end+1])
+                # else: return ""
 
         def _match(self, words, thatWords, topicWords, root):
                 """Return a tuple (pat, tem) where pat is a list of nodes, starting

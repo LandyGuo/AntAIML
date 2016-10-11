@@ -41,7 +41,7 @@ class Kernel:
 
     def __init__(self, sessionStore=None):
         self._verboseMode = True
-        self._version = "PyAIML 0.8.6"
+        self._version = "PyAIML 1.1"
         self._brain = PatternMgr()
         self._respondLock = threading.RLock()
         self._textEncoding = "utf-8"

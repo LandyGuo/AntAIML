@@ -154,7 +154,7 @@ class AimlHandler(ContentHandler):
                                 #raise AimlParserError, "Missing 'version' attribute in <aiml> tag "+self._location()
                                 #print "WARNING: Missing 'version' attribute in <aiml> tag "+self._location()
                                 #print "         Defaulting to version 1.0"
-                                self._version = "1.0"
+                                self._version = "1.1"
                         self._forwardCompatibleMode = (self._version != "1.0.1")
                         self._pushWhitespaceBehavior(attr)
                         # Not sure about this namespace business yet...
