@@ -188,7 +188,7 @@ class PatternMgr:
                 patMatch, template = self._match(input.split(), thatInput.split(), topicInput.split(), self._root)
                 logging.info("Find Matched Pattern:"+str(patMatch))
                 logging.info("Find Matched Template:"+str(template))
-                return template
+                return  template
 
         def star(self, starType, pattern, that, topic, index):
                 """Returns a string, the portion of pattern that was matched by a *.
@@ -229,7 +229,7 @@ class PatternMgr:
                         patMatch = patMatch[patMatch.index(self._THAT)+1 : patMatch.index(self._TOPIC)]
                         words = thatInput.split()
                 elif starType == 'topicstar':
-                        patMatch = patMatch[patMatch.index(self._TOPIC)+1 :]
+                        patMatch = patMatch[patMatch.index(self._TOPIC)+2 :]
                         words = topicInput.split()
                 else:
                         # unknown value
@@ -255,7 +255,9 @@ class PatternMgr:
                         stars_count += 1 
                     else:pat_Match += (x)
                 words_match,pat_Match = words_match.strip(),pat_Match.strip()
-                index = min(index,stars_count)#in case index are larger than number of stars
+                if index> stars_count:
+                    raise IndexError,"illegal index"
+                index = min(index,stars_count)#in case index are larger than number ofstars
                 logging.info("Words_match_str:"+words_match)
                 logging.info("Pat_Match_str:"+pat_Match)
                 logging.info("Match Group Index:"+str(index))

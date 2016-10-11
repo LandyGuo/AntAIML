@@ -412,30 +412,29 @@ class Kernel:
         except IndexError: that = ""
         subbedThat = self._subbers['normal'].sub(that)
 
-        # fetch the current topic
-        topic = self.getPredicate("topic", sessionID)
-        subbedTopic = self._subbers['normal'].sub(topic)
+        # use default type for star matching
+        subbedTopic = self._changeTopicType('default',sessionID)
+        self.setPredicate('topic', subbedTopic)
 
+        for star_index in range(1,10):
+            try: 
+                content = self._processStar(['star',{'index':star_index}], sessionID)
+                #在这里对所有的content进行实体识别
+                if content:
+                    type = self._recognition(content)
+                    subbedTopic = self._changeTopicType(type,sessionID)
+                    self.setPredicate('topic', subbedTopic)
+                    logging.info("Eternity Recognition:Stars Travelsal index:%s content:%s"%(star_index,content))
+                    break
+            except IndexError, msg:
+                break
         #eternity recognition in input
-        #remove last eternity recognition results
-        subbedTopic = re.sub("|".join(self._templateTypes),"",subbedTopic).strip()
-        if "object" in subbedInput:#recognize as object
-            subbedTopic+=(" "+"object")
-        elif "people" in subbedInput:#recognize as people
-            subbedTopic+=(" "+"people")
-        elif "other" in subbedInput:#recognize as people
-            subbedTopic+=(" "+"other")
-        else:#recognize as default
-            subbedTopic+=(" "+"default")
-        #加上一个真正的topic
-        if subbedTopic.strip() in self._templateTypes:
-             subbedTopic = " ".join(["ULTRABOGUSDUMMYTOPIC",subbedTopic.strip()])
-        self.setPredicate("topic",subbedTopic,sessionID)
 
         # self._brain.star("star", subbedInput, subbedThat, subbedTopic, index)
         # Determine the final response.
         response = ""
         elem = self._brain.match(subbedInput, subbedThat, subbedTopic)
+
 
         logging.info("Matched Elem:"+str(elem))
 
@@ -455,6 +454,31 @@ class Kernel:
         self.setPredicate(self._inputStack, inputStack, sessionID)
 
         return response
+
+
+    def _changeTopicType(self,type,sessionID):
+        # fetch the current topic
+        topic = self.getPredicate("topic", sessionID)
+        subbedTopic = self._subbers['normal'].sub(topic)
+        #remove last eternity recognition results
+        subbedTopic = re.sub("|".join(self._templateTypes),"",topic).strip()
+        #先拿到匹配的pattern
+        subbedTopic+=(" "+type)    
+        #没有真正的topic,加上一个虚拟的topic
+        if subbedTopic.strip() in self._templateTypes:
+             subbedTopic = " ".join(["ULTRABOGUSDUMMYTOPIC",subbedTopic.strip()])
+        return subbedTopic
+
+    def _recognition(self, _to_recognize):
+        if u"OBJECT" in _to_recognize:#recognize as object
+            return "object"
+        elif u"PEOPLE" in _to_recognize:#recognize as people
+            return "people"
+        elif u"OTHER" in _to_recognize:#recognize as people
+            return "other"
+        else:#recognize as default
+            return "default"
+
 
     def _processElement(self,elem, sessionID):
         """Process an AIML element.
@@ -943,16 +967,6 @@ class Kernel:
         # topic = "ULTRABOGUSDUMMYTOPIC PEOPLE"#for debug
         response = self._brain.star("star", input, that, topic, index)
         logging.info("Star:"+response)
-
-        #在这里对star的内容加上实体识别
-        #pick eternity from the matched star
-        # if star=="object":#recognized as object
-        #     self._intent_topic = self._object
-        # if star=="people":
-        #     self._intent_topic = self._people
-
-
-
 
         return response
 
