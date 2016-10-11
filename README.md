@@ -2,22 +2,27 @@
 
 ## PyAIML 中文支持
 
-中文支持维护(current maintainer): andelf (andelf AT gmail.com)
-
-<img src="https://raw.github.com/andelf/PyAIML/master/screenshot.jpg" />
+中文支持维护(current maintainer): LandyGuo (gqp.hust@gmail.com)
 
 NOTE:
 
+- 2016/10/10重大更新
 - 目前可以支持中文规则
-- 规则库目测翻译量巨大
 - 规则中请使用半角标点
-- 暂时对 CJK 中的 JK 无支持
 - 修正了 match() 函数的一个严重 BUG, 会导致 * 错误匹配
 - 可以完美保存会话进度
-- 中文存储基于分词,减少树深度
 
 Changelog:
 
+- 2016/10/10
+  - 中文支持修改为以字为单位，避免各个分词工具不同导致模板匹配问题
+  - 增加对纯中文，纯英文和中英文混杂的支持
+  - 修正<srai>重定向后<star/>匹配的bug
+  - 拓展aiml template,支持多个template
+  - 引入实体识别，根据匹配内容的实体属性自动选择响应的模板进行回复
+
+- 2013/03/14
+  - 添加 dumps(), loads() 保存 PatterMgr() 
 - 2013/03/09
   - 初步中文支持完成
 - 2013/03/10
@@ -26,8 +31,8 @@ Changelog:
 - 2013/03/12
   - 为 Kernel() 添加 session 参数
   - 添加 example3
-- 2013/03/14
-  - 添加 dumps(), loads() 保存 PatterMgr()
+
+
 
 ## 以下为原 README
 
