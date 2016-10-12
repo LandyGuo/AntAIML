@@ -1,0 +1,538 @@
+阿里	阿里巴巴	阿里巴巴集团	Alibaba	ALIBABA
+蚂蚁	蚂蚁金服	蚂蚁小微金融服务集团有限公司	Ant Financial	ANT FINANCIAL
+百度	狼厂	Baidu	baidu	BAIDU
+腾讯	鹅厂	Tencent	TENCENT
+京东	狗东	奶茶东	JD
+奇虎360科技有限公司	奇虎360
+搜狐	SOHU	sohu
+网易	Netease	NETEASE
+新浪	Sina	SINA
+携程	Ctrip	CTRIP
+完美世界
+优酷土豆	优酷	土豆	YouKu	YOUKU TuDou	TUDOU
+唯品会	Vipshop VIPSHOP
+金山	Kingsoft	KINGSOFT
+小米	MI
+盛大	盛大网络	SNDA	
+欢聚时代	YY
+苏宁	Suning SUNING	
+易车	BITAUTO
+乐视网	LETV
+四三九九
+前程无忧	51job 51JOB
+迅雷	迅雷下载	Thunder	THUNDER
+新华网	xinhuanet XINHUANET
+人民网	People's network
+聚美优品	jumei
+智联招聘	Zhaopin
+当当	dangdang
+艺龙	eLong
+人人贷	peer-to-peer lending
+国美	GOME
+联众世界
+IBM ibm
+谷歌	咕果	Google	GOOGLE
+微软	巨硬	Microsoft	MICROSOFT
+脸书	Facebook
+推特	Twitter
+优步	Uber UBER
+滴滴出行	滴滴打车	Didi Taxi
+联想集团	LENOVO Lenovo	LENOVO GROUP
+沃尔玛	WALMART
+中石油	中国石油化工集团公司	SINOPEC
+皇家壳牌石油	ROYAL DUTCH SHELL
+中国石油天然气集团公司	CHINA NATIONAL PETROLEUM
+埃克森美孚	EXXON MOBIL
+英国石油公司	BP
+国家电网公司	STATE GRID
+大众公司	VOLKSWAGEN
+丰田汽车公司	TOYOTA MOTOR
+嘉能可	GLENCORE
+道达尔公司	TOTAL
+雪佛龙	CHEVRON
+三星电子	SAMSUNG ELECTRONICS
+伯克希尔－哈撒韦公司	BERKSHIRE HATHAWAY
+苹果公司	APPLE
+麦克森公司	MCKESSON
+戴姆勒股份公司	DAIMLER
+中国工商银行	INDUSTRIAL & COMMERCIAL BANK OF CHINA
+EXOR集团	EXOR GROUP
+安盛	AXA
+通用汽车公司	GENERAL MOTORS
+意昂集团	E ON
+Phillips 66公司	Phillips 66
+通用电气公司	GENERAL ELECTRIC
+埃尼石油公司	ENI
+俄罗斯天然气工业股份公司	GAZPROM
+福特汽车公司	FORD MOTOR
+巴西国家石油公司	PETROBRAS
+中国建设银行	CHINA CONSTRUCTION BANK
+CVS Health公司	CVS Health
+鸿海精密工业股份有限公司	HON HAI PRECISION INDUSTRY
+安联保险集团	ALLIANZ
+美国电话电报公司	AT&T
+瓦莱罗能源公司	VALERO ENERGY
+联合健康集团	UNITEDHEALTH GROUP
+中国农业银行	AGRICULTURAL BANK OF CHINA
+中国建筑股份有限公司	CHINA STATE CONSTRUCTION ENGINEERING
+日本邮政控股公司	JAPAN POST HOLDINGS
+委内瑞拉国家石油公司	PDVSA
+Trafigura Beheer公司	Trafigura Beheer
+威瑞森电信	VERIZON COMMUNICATIONS
+法国巴黎银行	BNP PARIBAS
+卢克石油公司	LUKOIL
+本田汽车	HONDA MOTOR
+中国银行	BANK OF CHINA
+美源伯根公司	AMERISOURCEBERGEN
+墨西哥石油公司	PEMEX
+意大利忠利保险公司	ASSICURAZIONI GENERALI
+法国兴业银行	SOCIéTé GéNéRALE
+房利美	FANNIE MAE
+俄罗斯石油公司	ROSNEFT OIL
+好市多	COSTCO WHOLESALE
+惠普	HEWLETT-PACKARD
+克罗格	KROGER
+中国移动通信集团公司	CHINA MOBILE COMMUNICATIONS
+宝马集团	BMW Group
+SK集团	SK HOLDINGS
+法国农业信贷银行	CRéDIT AGRICOLE
+日产汽车	NISSAN MOTOR
+上海汽车集团股份有限公司	SAIC MOTOR
+摩根大通	JP MORGAN CHASE & CO
+乐购	TESCO
+西门子	SIEMENS
+家乐福	CARREFOUR
+日本电报电话公司	NIPPON TELEGRAPH & TELEPHONE
+美国快捷药方控股公司	EXPRESS SCRIPTS HOLDING
+西班牙国家银行	BANCO SANTANDER
+马来西亚国家石油公司	PETRONAS
+意大利国家电力公司	ENEL
+雀巢公司	NESTLé
+中国铁路工程总公司	China Railway Engineering
+中国海洋石油总公司	CHINA NATIONAL OFFSHORE OIL
+苏伊士集团	GDF SUEZ
+英国保诚集团	PRUDENTIAL
+挪威国家石油公司	STATOIL
+巴斯夫公司	BASF
+来宝集团	NOBLE GROUP
+法国电力公司	éLECTRICITé DE FRANCE
+中国铁道建筑总公司	CHINA RAILWAY CONSTRUCTION
+美国银行	BANK OF AMERICA CORP
+汇丰银行控股公司	HSBC HOLDINGS
+国际商业机器公司	INTERNATIONAL BUSINESS MACHINES
+马拉松原油公司	MARATHON PETROLEUM
+康德乐	CARDINAL HEALTH
+波音	BOEING
+花旗集团	CITIGROUP
+国家开发银行	China Development Bank
+亚马逊	AMAZON
+日立	HITACHI
+美国富国银行	WELLS FARGO
+荷兰国际集团	ING GROUP
+JX控股公司	JX HOLDINGS
+泰国国家石油有限公司	PTT
+中国人寿保险	CHINA LIFE INSURANCE
+中国平安保险	PING AN INSURANCE
+麦德龙	METRO
+英国法通保险公司	LEGAL & GENERAL GROUP
+现代汽车	HYUNDAI MOTOR
+宝洁公司	PROCTER & GAMBLE
+家得宝	HOME DEPOT
+德国电信	DEUTSCHE TELEKOM
+慕尼黑再保险公司	MUNICH RE GROUP
+ADM公司	ARCHER DANIELS MIDLAND
+中国中化集团公司	SINOCHEM GROUP
+空中客车集团	Airbus Group
+中国第一汽车集团公司	CHINA FAW GROUP
+安赛乐米塔尔	ARCELORMITTAL
+东风汽车集团	DONGFENG MOTOR GROUP
+软银集团	SoftBank Group
+德国邮政	DEUTSCHE POST
+伊塔乌联合银行控股公司	Itaú Unibanco Holding
+中国南方电网有限责任公司	CHINA SOUTHERN POWER GRID
+沃尔格林联合博姿集团	Walgreens Boots Alliance
+中国华润总公司	CHINA RESOURCES NATIONAL
+索尼	SONY
+塔吉特公司	TARGET
+强生	JOHNSON & JOHNSON
+印度石油公司	INDIAN OIL
+Anthem公司	Anthem
+大都会人寿	METLIFE
+苏黎世保险集团	ZURICH INSURANCE GROUP
+英杰华集团	AVIVA
+丸红株式会社	MARUBENI
+巴西银行	BANCO DO BRASIL
+州立农业保险公司	STATE FARM INSURANCE COS
+标致	PEUGEOT
+欧尚集团	GROUPE AUCHAN
+印尼国家石油公司	Pertamina
+松下	PANASONIC
+三菱商事株式会社	MITSUBISHI
+房地美	FREDDIE MAC
+法国BPCE银行集团	GROUPE BPCE
+美国康卡斯特电信公司	COMCAST
+沃达丰集团	VODAFONE GROUP
+美国邮政	US POSTAL SERVICE
+日本生命保险公司	NIPPON LIFE INSURANCE
+必和必拓	BHP BILLITON
+西班牙电话公司	TELEFóNICA
+百事公司	PEPSICO
+日本第一生命保险	DAI-ICHI LIFE INSURANCE
+中国邮政集团公司	CHINA POST GROUP
+中国兵器工业集团公司	CHINA NORTH INDUSTRIES GROUP
+英国劳埃德银行集团	LLOYDS BANKING GROUP
+天津物产集团有限公司	TEWOO GROUP
+日本永旺集团	AEON
+Finatis公司	Finatis
+联合技术公司	UNITED TECHNOLOGIES
+博世公司	ROBERT BOSCH
+路易达孚	Louis Dreyfus Commodities
+美国国际集团	AMERICAN INTERNATIONAL GROUP
+联合利华	UNILEVER
+莱茵集团	RWE
+美洲电信	AMéRICA MóVIL
+太平洋建设集团	Pacific Construction Group
+东芝	TOSHIBA
+信实工业公司	RELIANCE INDUSTRIES
+中国航空工业集团公司	AVIATION INDUSTRY CORP OF CHINA
+中国电信集团公司	CHINA TELECOMMUNICATIONS
+东京电力公司	TOKYO ELECTRIC POWER
+韩国浦项制铁公司	POSCO
+荷兰全球保险集团	AEGON
+德意志银行	DEUTSCHE BANK
+中国交通建设集团有限公司	CHINA COMMUNICATIONS CONSTRUCTION
+法国国家人寿保险公司	CNP ASSURANCES
+诺华公司	NOVARTIS
+联合包裹速递服务公司	UNITED PARCEL SERVICE
+陶氏化学	DOW CHEMICAL
+安泰保险	AETNA
+西农	WESFARMERS
+邦吉公司	BUNGE
+意大利联合圣保罗银行	INTESA SANPAOLO
+中国人民保险集团股份有限公司	PEOPLE'S INSURANCE COMPANY OF CHINA
+LG电子	LG ELECTRONICS
+美国劳氏公司	LOWE'S
+俄罗斯联邦储蓄银行	SBERBANK
+拜耳集团	BAYER
+蒂森克虏伯	THYSSENKRUPP
+康菲石油公司	CONOCOPHILLIPS
+澳大利亚伍尔沃斯公司	WOOLWORTHS
+英特尔公司	INTEL
+Energy Transfer Equity公司	Energy Transfer Equity
+Seven & I 控股公司	SEVEN & I HOLDINGS
+巴西布拉德斯科银行	BANCO BRADESCO
+中国中信集团有限公司	CITIC GROUP
+卡特彼勒	CATERPILLAR
+雷普索尔公司	REPSOL
+瑞士罗氏公司	ROCHE GROUP
+交通银行	BANK OF COMMUNICATIONS
+雷诺	RENAULT
+圣戈班集团	SAINT-GOBAIN
+韩国电力公司	KOREA ELECTRIC POWER
+保德信金融集团	PRUDENTIAL FINANCIAL
+巴克莱	BARCLAYS
+神华集团	SHENHUA GROUP
+德国联邦铁路公司	DEUTSCHE BAHN
+中国五矿集团公司	CHINA MINMETALS
+Orange公司	ORANGE
+万喜集团	VINCI
+三菱日联金融集团	MITSUBISHI UFJ FINANCIAL GROUP
+巴西JBS公司	JBS
+西班牙ACS集团	ACS
+新日铁住金	NIPPON STEEL & SUMITOMO METAL
+南苏格兰电力	SSE
+日本伊藤忠商事株式会社	ITOCHU
+北京汽车集团	Beijing Automotive Group
+马士基集团	AP MØLLER-MÆRSK GROUP
+沙特基础工业公司	SABIC
+韩国现代重工集团	HYUNDAI HEAVY INDUSTRIES
+辉瑞制药有限公司	PFIZER
+宏利金融	Manulife Financial
+三井物产株式会社	MITSUI
+华特迪士尼公司	WALT DISNEY
+斯伦贝谢公司	SCHLUMBERGER
+哈门那公司	HUMANA
+英国森特理克集团	CENTRICA
+宝钢集团有限公司	BAOSTEEL GROUP
+国际石油投资公司	INTERNATIONAL PETROLEUM INVESTMENT
+ENTERPRISE PRODUCTS PARTNERS公司	ENTERPRISE PRODUCTS PARTNERS
+西班牙对外银行	BANCO BILBAO VIZCAYA ARGENTARIA
+力拓集团	RIO TINTO GROUP
+奥地利石油天然气集团	OMV GROUP
+中国华能集团公司	CHINA HUANENG GROUP
+思科公司	CISCO SYSTEMS
+安海斯-布希英博	ANHEUSER-BUSCH INBEV
+中国联合网络通信股份有限公司	CHINA UNITED NETWORK COMMUNICATIONS
+华为投资控股有限公司	HUAWEI INVESTMENT & HOLDING
+西斯科公司	SYSCO
+美国英格雷姆麦克罗公司	INGRAM MICRO
+可口可乐公司	COCA-COLA
+德国大陆集团	CONTINENTAL
+山东魏桥创业集团有限公司	SHANDONG WEIQIAO PIONEERING GROUP
+招商银行	CHINA MERCHANTS BANK
+利安德巴塞尔工业公司	LYONDELLBASELL INDUSTRIES
+洛克希德－马丁	LOCKHEED MARTIN
+联邦快递	FEDEX
+河北钢铁集团	HEBEI IRON & STEEL GROUP
+中国铝业公司	ALUMINUM CORP OF CHINA
+赛诺菲	SANOFI
+起亚汽车	KIA MOTORS
+日本三井住友金融集团	SUMITOMO MITSUI FINANCIAL GROUP
+法国布伊格集团	BOUYGUES
+江森自控有限公司	JOHNSON CONTROLS
+联合信贷集团	UNICREDIT GROUP
+正威国际集团	Amer International Group
+荷兰皇家阿霍德集团	ROYAL AHOLD
+Plains GP Holdings公司	Plains GP Holdings
+全球燃料服务公司	WORLD FUEL SERVICES
+富士通	FUJITSU
+丰益国际	WILMAR INTERNATIONAL
+中国电力建设集团有限公司	POWER CHINA
+印度塔塔汽车公司	TATA MOTORS
+CHS公司	CHS
+MS&AD保险集团控股有限公司	MS&AD INSURANCE GROUP HOLDINGS
+美国航空集团	AMERICAN AIRLINES GROUP
+绿地控股集团有限公司	GREENLAND HOLDING GROUP
+默沙东	MERCK
+印度国家银行	STATE BANK OF INDIA
+迪奥	CHRISTIAN DIOR
+百思买	BEST BUY
+日本明治安田生命保险公司	MEIJI YASUDA LIFE INSURANCE
+山西焦煤集团有限责任公司	Shanxi Coking Coal Group
+中国化工集团公司	CHEMCHINA
+澳大利亚国民银行	NATIONAL AUSTRALIA BANK
+日本KDDI电信公司	KDDI
+沃尔沃集团	VOLVO
+澳洲联邦银行	COMMONWEALTH BANK OF AUSTRALIA
+中国建筑材料集团有限公司	CHINA NATIONAL BUILDING MATERIALS GROUP
+兴业银行	Industrial Bank
+中粮集团有限公司	COFCO
+达美航空	DELTA AIR LINES
+江苏沙钢集团	JIANGSU SHAGANG GROUP
+霍尼韦尔国际公司	HONEYWELL INTERNATIONAL
+中国医药集团	Sinopharm
+HCA公司	HCA HOLDINGS
+高盛	GOLDMAN SACHS GROUP
+Tesoro公司	TESORO
+巴拉特石油公司	BHARAT PETROLEUM
+中国民生银行	CHINA MINSHENG BANKING
+怡和集团	JARDINE MATHESON
+Iberdrola公司	IBERDROLA
+瑞士ABB集团	ABB
+汉莎集团	LUFTHANSA GROUP
+美国利宝互助保险集团	LIBERTY MUTUAL INSURANCE GROUP
+加拿大乔治威斯顿公司	GEORGE WESTON
+中国机械工业集团有限公司	SINOMACH
+瑞士信贷	CREDIT SUISSE GROUP
+东京海上日动火灾保险公司	TOKIO MARINE HOLDINGS
+三菱电机股份有限公司	MITSUBISHI ELECTRIC
+Talanx公司	Talanx
+电装公司	DENSO
+美国联合大陆控股有限公司	UNITED CONTINENTAL HOLDINGS
+德国中央合作银行	DZ BANK
+上海浦东发展银行股份有限公司	Shanghai Pudong Development Bank
+美国纽约人寿保险公司	NEW YORK LIFE INSURANCE
+加拿大鲍尔集团	POWER CORP OF CANADA
+加拿大皇家银行	ROYAL BANK OF CANADA
+甲骨文公司	ORACLE
+森宝利	J SAINSBURY
+GS加德士	GS CALTEX
+苏格兰皇家银行集团	ROYAL BANK OF SCOTLAND GROUP
+渤海钢铁集团	Bohai Steel Group
+Alimentation Couche-Tard公司	Alimentation Couche-Tard
+摩根士丹利	MORGAN STANLEY
+日本出光兴产株式会社	IDEMITSU KOSAN
+瑞银集团	UBS Group
+英国葛兰素史克公司	GLAXOSMITHKLINE
+意大利邮政集团	POSTE ITALIANE
+泰森食品	TYSON FOODS
+巴西淡水河谷公司	VALE
+瑞士再保险股份有限公司	SWISS RE
+德国艾德卡公司	EDEKA ZENTRALE
+冀中能源集团	JIZHONG ENERGY GROUP
+台湾中油股份有限公司	CPC
+森科能源公司	SUNCOR ENERGY
+麦格纳国际	MAGNA INTERNATIONAL
+日本三菱重工业股份有限公司	MITSUBISHI HEAVY INDUSTRIES
+美国全国保险公司	NATIONWIDE
+中国航空油料集团公司	CHINA NATIONAL AVIATION FUEL GROUP
+SNCF Mobilités公司	SNCF Mobilités
+迪尔公司	DEERE
+杜邦公司	DUPONT
+美国运通公司	AMERICAN EXPRESS
+中国冶金科工集团有限公司	CHINA METALLURGICAL GROUP
+印度斯坦石油公司	HINDUSTAN PETROLEUM
+中国太平洋保险	CHINA PACIFIC INSURANCE GROUP
+韩华集团	HANWHA
+西太平洋银行	WESTPAC BANKING
+Achmea公司	Achmea
+韩国天然气公司	KOREA GAS
+好事达	ALLSTATE
+佳能	CANON
+英国标准人寿保险公司	STANDARD LIFE
+和记黄埔有限公司	HUTCHISON WHAMPOA
+日本钢铁工程控股公司	JFE HOLDINGS
+信诺	CIGNA
+浙江物产集团	ZHEJIANG MATERIALS INDUSTRY GROUP
+普利司通	BRIDGESTONE
+大同煤矿集团有限责任公司	Datong Coal Mine Group
+中国华信能源有限公司	CEFC China Energy
+中国国电集团公司	CHINA GUODIAN
+新兴际华集团	XINXING CATHAY INTERNATIONAL GROUP
+中国华电集团公司	CHINA HUADIAN
+哥伦比亚国家石油公司	ECOPETROL
+现代摩比斯公司	HYUNDAI MOBIS
+亿滋国际	MONDELEZ INTERNATIONAL
+美国教师退休基金会	TIAA-CREF
+住友商事	SUMITOMO
+Enbridge公司	Enbridge
+国际资产控股公司	INTL FCSTONE
+波兰国营石油公司	PKN ORLEN GROUP
+江西铜业集团公司	Jiangxi Copper
+和硕	Pegatron
+万通互惠理财	MASSACHUSETTS MUTUAL LIFE INSURANCE
+多伦多道明银行	TORONTO-DOMINION BANK
+潞安集团	Shanxi LuAn Mining Group
+意大利电信	TELECOM ITALIA
+DirecTV公司	DIRECTV
+三菱化学控股	MITSUBISHI CHEMICAL HOLDINGS
+广州汽车工业集团	Guangzhou Automobile Industry Group
+爱立信	LM ERICSSON	ERICSSON
+河南能源化工集团	HENAN ENERGY & CHEMICAL
+法国航空－荷兰皇家航空集团	AIR FRANCE-KLM GROUP
+中国电子信息产业集团有限公司	CHINA ELECTRONICS
+施耐德电气	SCHNEIDER ELECTRIC
+澳新银行集团	AUSTRALIA & NEW ZEALAND BANKING GROUP
+哈里伯顿公司	HALLIBURTON
+西班牙天然气公司	GAS NATURAL FENOSA
+中国船舶重工集团公司	CHINA SHIPBUILDING INDUSTRY
+住友生命保险公司	SUMITOMO LIFE INSURANCE
+山东能源集团有限公司	SHANDONG ENERGY GROUP
+埃森哲	ACCENTURE
+二十一世纪福克斯	TWENTY-FIRST CENTURY FOX
+法国威立雅环境集团	VEOLIA ENVIRONNEMENT
+3M公司	3M
+CFE公司	CFE
+山西晋城无烟煤矿业集团有限责任公司	Shanxi Jincheng Anthracite Coal Mining Group
+陕西延长石油	Shaanxi Yanchang Petroleum Group
+KOC集团	KOC HOLDING
+晋能集团	JINNENG GROUP
+西尔斯控股	SEARS HOLDINGS
+关西电力	KANSAI ELECTRIC POWER
+荷兰皇家飞利浦公司	ROYAL PHILIPS
+通用动力	GENERAL DYNAMICS
+费森尤斯集团	FRESENIUS
+大众超级市场公司	PUBLIX SUPER MARKETS
+广达电脑	QUANTA COMPUTER
+中国有色矿业集团有限公司	China Nonferrous Metal Mining Group
+中国能源建设集团有限公司	China Energy Engineering Group
+中国大唐集团公司	CHINA DATANG
+台塑石化股份有限公司	FORMOSA PETROCHEMICAL
+荷兰合作银行	RABOBANK GROUP
+欧莱雅	L'ORéAL
+Sompo Japan Nipponkoa Holdings公司	Sompo Japan Nipponkoa Holdings
+Migros集团	MIGROS GROUP
+菲利普－莫里斯国际公司	PHILIP MORRIS INTERNATIONAL
+曼福集团	MAPFRE GROUP
+开滦集团	KAILUAN GROUP
+Coop集团	COOP GROUP
+首钢集团	SHOUGANG GROUP
+中国电力投资集团公司	CHINA POWER INVESTMENT
+俄罗斯外贸银行	VTB Bank
+PHOENIX PHARMAHANDEL公司	PHOENIX PHARMAHANDEL
+Unipol公司	Unipol
+德尔海兹集团	DELHAIZE GROUP
+法国邮政	LA POSTE
+山西阳泉煤业	Yangquan Coal Industry Group
+TJX公司	TJX
+英国电信集团	BT GROUP
+日本瑞穗金融集团	MIZUHO FINANCIAL GROUP
+法国维旺迪集团	VIVENDI
+Ultrapar控股公司	ULTRAPAR HOLDINGS
+时代华纳	TIME WARNER
+陕西煤业化工集团	Shaanxi Coal & Chemical Industry
+加拿大丰业银行	BANK OF NOVA SCOTIA
+金巴斯集团	COMPASS GROUP
+日本中部电力	CHUBU ELECTRIC POWER
+中国光大集团	China Everbright Group
+梅西百货	MACY'S
+达能	DANONE
+仁宝电脑	Compal Electronics
+巴登-符滕堡州能源公司	ENERGIE BADEN-WüRTTEMBERG
+耐克公司	NIKE
+中国通用技术	China General Technology
+Tech Data公司	TECH DATA
+TonenGeneral Sekiyu公司	TonenGeneral Sekiyu
+马自达汽车株式会社	MAZDA MOTOR
+安富利公司	AVNET
+威廉莫里森超市连锁公司	WM MORRISON SUPERMARKETS
+中国远洋运输	CHINA OCEAN SHIPPING
+西北互助人寿保险公司	NORTHWESTERN MUTUAL
+麦当劳	MCDONALD'S
+Exelon公司	EXELON
+铃木汽车	SUZUKI MOTOR
+中国航天科技集团公司	China Aerospace Science & Technology
+Travelers Cos公司	TRAVELERS COS
+S-OIL公司	S-OIL
+英美资源集团	ANGLO AMERICAN
+三星C&T公司	SAMSUNG C&T
+爱信精机	AISIN SEIKI
+国际航空集团	INTERNATIONAL AIRLINES GROUP
+日本电气公司	NEC
+乐天百货	Lotte Shopping
+德科集团	ADECCO GROUP
+来德爱	RITE AID
+高通	Qualcomm
+印度石油天然气公司	OIL & NATURAL GAS
+国际纸业	INTERNATIONAL PAPER
+鞍钢集团公司	ANSTEEL GROUP
+富士重工	Fuji Heavy Industries
+伟创力	FLEXTRONICS INTERNATIONAL
+Medipal控股公司	MEDIPAL HOLDINGS
+阿斯利康	ASTRAZENECA
+三星人寿保险	SAMSUNG LIFE INSURANCE
+中国保利集团	China Poly Group
+米其林公司	MICHELIN
+西方石油公司	OCCIDENTAL PETROLEUM
+荷兰GasTerra能源公司	GASTERRA
+住友电工	SUMITOMO ELECTRIC INDUSTRIES
+杜克能源	Duke Energy
+喜力控股公司	HEINEKEN HOLDING
+海航集团	HNA Group
+大和房建	DAIWA HOUSE INDUSTRY
+英国耆卫保险公司	OLD MUTUAL
+友邦保险	AIA Group
+BAE系统公司	BAE SYSTEMS
+途易	TUI
+夏普	SHARP
+国泰人寿保险股份有限公司	Cathay Life Insurance
+台积电	Taiwan Semiconductor Manufacturing
+LG DISPLAY公司	LG DISPLAY
+Greenergy Fuels Holdings公司	Greenergy Fuels Holdings
+CRH公司	CRH
+东日本旅客铁道株式会社	EAST JAPAN RAILWAY
+浙江吉利控股集团	ZHEJIANG GEELY HOLDING GROUP
+Gilead Sciences公司	Gilead Sciences
+渣打银行	STANDARD CHARTERED
+Perusahaan Listrik Negara公司	Perusahaan Listrik Negara
+澳大利亚电信	TELSTRA
+阿尔斯通	ALSTOM
+贝克休斯	Baker Hughes
+艾默生电气	EMERSON ELECTRIC
+索迪斯	SODEXO
+英国国家电网	National Grid
+EMC公司	EMC
+采埃孚	ZF Friedrichshafen
+德国巴登-符腾堡州银行	LANDESBANK BADEN-WüRTTEMBERG
+Onex公司	ONEX
+Vattenfall公司	VATTENFALL
+联合服务汽车协会	United Services Automobile Assn
+联合太平洋	Union Pacific
+美国诺斯洛普格拉曼公司	NORTHROP GRUMMAN
+美铝公司	Alcoa
+第一资本金融公司	Capital One Financial
+AntarChile公司	AntarChile
+罗尔斯罗伊斯公司	Rolls-Royce Holdings
+科斯莫石油	COSMO OIL
+武汉钢铁	WUHAN IRON & STEEL
+肯德基	KFC

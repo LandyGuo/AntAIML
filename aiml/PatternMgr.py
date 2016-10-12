@@ -188,7 +188,7 @@ class PatternMgr:
                 patMatch, template = self._match(input.split(), thatInput.split(), topicInput.split(), self._root)
                 logging.info("Find Matched Pattern:"+str(patMatch))
                 logging.info("Find Matched Template:"+str(template))
-                return  template
+                return  template,patMatch
 
         def star(self, starType, pattern, that, topic, index):
                 """Returns a string, the portion of pattern that was matched by a *.

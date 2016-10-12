@@ -3,11 +3,6 @@
 import AimlParser
 import DefaultSubs
 import Utils
-from PatternMgr import PatternMgr
-from WordSub import WordSub
-from LangSupport import mergeChineseSpace,splitChinese
-
-from ConfigParser import ConfigParser
 import copy
 import glob
 import os
@@ -20,7 +15,14 @@ import threading
 import xml.sax
 import logging
 
+from PatternMgr import PatternMgr
+from WordSub import WordSub
+from LangSupport import mergeChineseSpace,splitChinese
+from ConfigParser import ConfigParser
+from aiml.Ner_AIML_Template.python_ner import ner
 
+#eternity types:'film','music','book','entertainer','politician','location','company','country','food','entrepreneur_cn','event','animation'
+NER = ner()
 
 class Kernel:
     # module constants
@@ -31,11 +33,8 @@ class Kernel:
     _inputHistory = "_inputHistory"     # keys to a queue (list) of recent user input
     _outputHistory = "_outputHistory"   # keys to a queue (list) of recent responses.
     _inputStack = "_inputStack"         # Should always be empty in between calls to respond()
-    #indicate star match type
-    _object = 0
-    _people = 1
     #templates type
-    _templateTypes = ['object','people','default','other']
+    _templateTypes = ['film','music','book','entertainer','politician','location','company','country','food','entrepreneur_cn','event','animation','default']
 
 
 
@@ -416,27 +415,40 @@ class Kernel:
         subbedTopic = self._changeTopicType('default',sessionID)
         self.setPredicate('topic', subbedTopic)
 
-        for star_index in range(1,10):
-            try: 
+        #get templates
+        # _,patMatch = self._brain.match(subbedInput, subbedThat, subbedTopic)
+        # logging.info("-------PatMatch:"+str(patMatch))
+
+        # Determine the final response.
+        response = ""
+        elem = None
+        findRightTemplate = False
+        for star_index in range(1,4):#最多3个stars
+            try:
                 content = self._processStar(['star',{'index':star_index}], sessionID)
+                logging.info("Eternity Recognition:Stars Travelsal index:%s content:%s"%(star_index,content))
                 #在这里对所有的content进行实体识别
                 if content:
                     type = self._recognition(content)
+                    # if type in types:#如何获得types
                     subbedTopic = self._changeTopicType(type,sessionID)
                     self.setPredicate('topic', subbedTopic)
-                    logging.info("Eternity Recognition:Stars Travelsal index:%s content:%s"%(star_index,content))
-                    break
+                    logging.info("Topic Recognition: Change Topic to:%s" % subbedTopic)  
+                    elem,_ = self._brain.match(subbedInput, subbedThat, subbedTopic)
+                    if elem is not None:
+                        logging.info("Topic Recognition Success: Find Topic Match:%s" % elem)
+                        findRightTemplate = True
+                        break
             except IndexError, msg:
                 break
-        #eternity recognition in input
+        
+        if not findRightTemplate:
+            logging.info("Topic Recognition Failed: Change Topic to: default")
+            subbedTopic = self._changeTopicType("default",sessionID)
+            self.setPredicate('topic', subbedTopic)
+            elem,_ = self._brain.match(subbedInput, subbedThat, subbedTopic)
+            logging.info("Matched Elem:"+str(elem))
 
-        # self._brain.star("star", subbedInput, subbedThat, subbedTopic, index)
-        # Determine the final response.
-        response = ""
-        elem = self._brain.match(subbedInput, subbedThat, subbedTopic)
-
-
-        logging.info("Matched Elem:"+str(elem))
 
         if elem is None:
             if self._verboseMode:
@@ -470,14 +482,16 @@ class Kernel:
         return subbedTopic
 
     def _recognition(self, _to_recognize):
-        if u"OBJECT" in _to_recognize:#recognize as object
-            return "object"
-        elif u"PEOPLE" in _to_recognize:#recognize as people
-            return "people"
-        elif u"OTHER" in _to_recognize:#recognize as people
-            return "other"
-        else:#recognize as default
-            return "default"
+        # one can simply call function findAllEntity to find all entities in a sentence
+        try:
+            _to_recognize = _to_recognize.encode('utf-8')
+        except UnicodeError:pass#ensure utf-8 encoding
+        result = NER.findAllEntity(_to_recognize)
+        logging.info("NER_Recognition Result:"+str(result))
+        for v in result.values():
+            return v['category'][0]
+        return 'default'
+
 
 
     def _processElement(self,elem, sessionID):
